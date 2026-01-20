@@ -1,0 +1,3504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M. Dasan Institute of Technology</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://mdit.ac.in/xc-web-assets/logo/logo-5.png">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+
+    <!-- Fontawsome CDN -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Gallery -->
+
+    <!-- <link rel='stylesheet' href='https://cssgram-cssgram.netdna-ssl.com/cssgram.min.css'> -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.21/css/lightgallery.min.css'>
+
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/lightcase/2.5.0/css/lightcase.css'>
+
+
+
+    <!-- Custom Css -->
+    <style>
+        :root {
+            /*Black*/
+            --xc0: #000000;
+            /*White*/
+            --xc1: #ffffff;
+            /* Red/R700 */
+            --xc2: #912224;
+            /* Red/R900 */
+            --xc3: #290A0A;
+            /* Secondary/Grey Blue */
+            --xc4: #657899;
+
+            --xc5: #531315;
+            /* Blue/B800 */
+            --xc6: #002538;
+            /* Grey/Grey 900 */
+            --xc7: #171717;
+            /* Grey/Grey 50 */
+            --xc8: #E6E6E6;
+            /* Blue/B600 */
+            --xc9: #005C8B;
+
+            --xc10: #525252;
+            /* Red/R400 */
+            --xc11: #D65053;
+            /* Grey/Grey 100 */
+            --xc12: #A2A2A2;
+            --xc13: #D65053;
+            --xc14: #808080;
+            /* Grey/Grey 800 */
+            --xc15: #252525;
+            /* Grey/Grey 25 */
+            --xc16: #F6F6F6;
+            /* Secondary/Beige */
+            --xc17: #F3EED9;
+            /* Grey/Grey 700 */
+            --xc18: #343434;
+            /* Red/R100 */
+            --xc19: #EDAFB1;
+            /* Grey/Grey 200 */
+            --xc20: #747474;
+
+            --xc21: #101010;
+            /* Red/R50 */
+            --xc22: #FBEFEF;
+        }
+
+        .xc-tag {
+            padding: 0px 5px;
+            background: var(--xc4);
+            color: var(--xc1);
+            margin-left: 5px;
+            border-radius: 4px;
+            font-size: .7rem;
+        }
+
+        .xc-mobile-canvas {
+            z-index: 99999;
+        }
+
+        .modal-backdrop {
+            z-index: 9999;
+        }
+    </style>
+
+    <link href="https://mdit.ac.in/xc-web-assets/css/xc-style.css?v=3" rel="stylesheet">
+    <link href="https://mdit.ac.in/xc-web-assets/css/xc-style-media.css" rel="stylesheet">
+
+
+    <style>
+    @media screen and (max-width: 768px) {
+
+        .xc-academics {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .xc-menu-ul-1 li .xc-sub-menu li a {
+            color: var(--xc19);
+        }
+
+        .xc-m-swiper {
+            display: block !important;
+        }
+
+        .xc-d-swiper {
+            display: none !important;
+        }
+
+        .xc-mobile-breadcrumb {
+            display: flex;
+        }
+
+        .xc-banner .xc-banner-bg {
+            max-width: 200px;
+            right: 20px;
+        }
+
+        .xc-header .xc-header-main {
+            padding: 0px 0 0 20px;
+            padding: 0px 0 0 20px;
+            position: sticky;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 9999;
+        }
+
+        .xc-header .xc-header-main .xc-header-left {
+            flex: calc(100% - 60px);
+        }
+
+        .xc-header .xc-header-main .xc-header-right {
+            flex: 60px;
+            background: var(--xc7);
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .xc-header .xc-header-main .xc-header-left .xc-logo {
+            max-height: 50px;
+        }
+
+        .xc-header .xc-header-main .xc-header-right .xc-ul-1 {
+            display: none;
+        }
+
+        .xc-m-menu-button {
+            display: block;
+            box-shadow: none !important;
+        }
+
+        .xc-page-wrapper .xc-page-left {
+            display: none;
+        }
+
+        .xc-notification-content {
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+            flex-direction: row;
+        }
+
+        .xc-swiper-inner .xc-swiper-content {
+            left: 20px;
+        }
+
+        .xc-swiper-inner .xc-swiper-content p {
+            font-size: 2rem;
+        }
+
+        .xc-swiper-button {
+            bottom: 10px;
+            left: unset;
+            right: 20px;
+        }
+
+        .xc-swiper-button .swiper-button-prev {
+            margin-right: 10px;
+        }
+
+        .xc-chairman p {
+            font-size: 1.125rem;
+        }
+
+        .xc-about-wrap {
+            max-width: 100%;
+        }
+
+        .xc-common {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .xc-ul-menu {
+            display: none;
+        }
+
+        .xc-stat-wrap {
+            /* flex-direction: column; */
+            flex-wrap: wrap;
+            margin-top: 20px;
+            align-items: flex-start;
+        }
+
+        .xc-stat-wrap .xc-stats {
+            margin-bottom: 30px;
+            flex: 30%;
+        }
+
+        .xc-academic-row {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .xc-academic-swiper {
+            display: none;
+        }
+
+        .xc-academic-left .xc-academic-left-inner .xc-readmore {
+            margin: unset;
+        }
+
+        .xc-academic-row .xc-academic-col-1 {
+            width: 100%;
+            /* margin-bottom: 40px; */
+        }
+
+        .xc-academic-row .xc-academic-col-2 {
+            width: 100%;
+        }
+
+        .xc-academic-left {
+            margin-right: 0;
+        }
+
+        .xc-academic-swiper .xc-course-slide {
+            margin: 0 0px;
+        }
+
+        .xc-sl-common {
+            padding: 40px 20px 40px 20px;
+        }
+
+        .xc-students-life .xc-sl-row {
+            flex-direction: column-reverse;
+        }
+
+        .xc-sl-bg {
+            min-height: 400px;
+        }
+
+        .xc-event-box {
+            margin-bottom: 20px;
+        }
+
+        .xc-content-common .xc-readmore {
+            margin-bottom: 40px;
+            margin-top: 10px;
+        }
+
+        .xc-stats-head {
+            text-align: left;
+        }
+
+        .xc-stats-head hr {
+            margin-left: unset;
+            margin-right: unset;
+        }
+
+        .xc-event-box .xc-event-date {
+            flex: 20%;
+        }
+
+        .xc-event-box .xc-event-content {
+            flex: 80%;
+        }
+
+        .xc-page-content {
+            padding: 25px 20px 25px 20px;
+        }
+
+        .xc-img-right img {
+            padding-left: 0;
+        }
+
+        .xc-img-left img {
+            padding-right: 0;
+        }
+
+        .xc-mission {
+            overflow: hidden;
+        }
+
+        .xc-mission img {
+            right: -180px;
+            bottom: -180px;
+        }
+
+        /* Footer */
+        .xc-footer-logo img {
+            max-width: 90px;
+        }
+
+        .xc-link-wrap.right {
+            margin-left: 0;
+        }
+
+        .xc-link-wrap {
+            border-top: 1px solid var(--xc14);
+            margin-top: 0px;
+            margin-right: 0 !important;
+        }
+
+        .xc-d-m {
+            display: block;
+        }
+
+        .xc-d-d {
+            display: none
+        }
+
+        .xc-footer-ul {
+            margin-bottom: 25px;
+        }
+
+        .xc-footer-ul li.xc-text {
+            line-height: 1.5;
+            flex-direction: column;
+        }
+
+        .xc-footer-bottom {
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .xc-footer-bottom .xc-social,
+        .xc-footer-bottom .xc-cpy {
+            padding-top: 5px;
+        }
+
+        /* Gallery */
+        .revGallery-anchor {
+            width: calc(100% / 1);
+        }
+    }
+
+    @media (min-width: 769px) and (max-width: 991px) {
+        .xc-academics {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .xc-menu-ul-1 li .xc-sub-menu li a {
+            color: var(--xc19);
+        }
+
+        .xc-m-swiper {
+            display: block !important;
+        }
+
+        .xc-d-swiper {
+            display: none !important;
+        }
+
+        .xc-mobile-breadcrumb {
+            display: flex;
+        }
+
+        .xc-header .xc-header-main {
+            padding: 0px 0 0 20px;
+        }
+
+        .xc-header .xc-header-main .xc-header-left {
+            flex: calc(100% - 60px);
+        }
+
+        .xc-header .xc-header-main .xc-header-right {
+            flex: 60px;
+            background: var(--xc7);
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .xc-header .xc-header-main .xc-header-left .xc-logo {
+            max-height: 40px;
+        }
+
+        .xc-header .xc-header-main .xc-header-right .xc-ul-1 {
+            display: none;
+        }
+
+        .xc-m-menu-button {
+            display: block;
+            box-shadow: none !important;
+        }
+
+        .xc-page-wrapper .xc-page-left {
+            display: none;
+        }
+
+        .xc-notification-content {
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+            flex-direction: row;
+        }
+
+        .xc-swiper-inner .xc-swiper-content {
+            left: 20px;
+        }
+
+        .xc-swiper-inner .xc-swiper-content p {
+            font-size: 2rem;
+        }
+
+        .xc-swiper-button {
+            bottom: 10px;
+            left: unset;
+            right: 20px;
+        }
+
+        .xc-swiper-button .swiper-button-prev {
+            margin-right: 10px;
+        }
+
+        .xc-chairman p {
+            font-size: 1.125rem;
+        }
+
+        .xc-about-wrap {
+            max-width: 100%;
+        }
+
+        .xc-common {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .xc-ul-menu {
+            display: none;
+        }
+
+        .xc-stat-wrap {
+            /* flex-direction: column; */
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .xc-stat-wrap .xc-stats {
+            margin-bottom: 30px;
+            flex: 30%;
+        }
+
+        .xc-academic-row {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .xc-academic-swiper {
+            display: none;
+        }
+
+        .xc-academic-left .xc-academic-left-inner .xc-readmore {
+            margin: unset;
+        }
+
+        .xc-academic-row .xc-academic-col-1 {
+            width: 100%;
+            /* margin-bottom: 40px; */
+        }
+
+        .xc-academic-row .xc-academic-col-2 {
+            width: 100%;
+        }
+
+        .xc-academic-left {
+            margin-right: 0;
+        }
+
+        .xc-academic-swiper .xc-course-slide {
+            margin: 0 0px;
+        }
+
+        .xc-sl-common {
+            padding: 40px 20px 40px 20px;
+        }
+
+        .xc-students-life .xc-sl-row {
+            flex-direction: column-reverse;
+        }
+
+        .xc-sl-bg {
+            min-height: 400px;
+        }
+
+        .xc-event-box {
+            margin-bottom: 20px;
+        }
+
+        .xc-content-common .xc-readmore {
+            margin-bottom: 40px;
+            margin-top: 10px;
+        }
+
+        .xc-stats-head {
+            text-align: left;
+        }
+
+        .xc-stats-head hr {
+            margin-left: unset;
+            margin-right: unset;
+        }
+
+        .xc-event-box .xc-event-date {
+            flex: 20%;
+        }
+
+        .xc-event-box .xc-event-content {
+            flex: 80%;
+        }
+
+        .xc-page-content {
+            padding: 25px 20px 25px 20px;
+        }
+
+        .xc-img-right img {
+            padding-left: 0;
+        }
+
+        .xc-img-left img {
+            padding-right: 0;
+        }
+
+        .xc-mission {
+            overflow: hidden;
+        }
+
+        .xc-mission img {
+            right: -180px;
+            bottom: -180px;
+        }
+
+        /* Footer */
+        .xc-footer-logo img {
+            max-width: 90px;
+        }
+
+        .xc-link-wrap.right {
+            margin-left: 0;
+        }
+
+        .xc-link-wrap {
+            border-top: 1px solid var(--xc14);
+            margin-top: 0px;
+            margin-right: 0 !important;
+        }
+
+        .xc-d-m {
+            display: block;
+        }
+
+        .xc-d-d {
+            display: none
+        }
+
+        .xc-footer-ul {
+            margin-bottom: 25px;
+        }
+
+        .xc-footer-ul li.xc-text {
+            line-height: 1.5;
+            flex-direction: column;
+        }
+
+        .xc-footer-bottom {
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .xc-footer-bottom .xc-social,
+        .xc-footer-bottom .xc-cpy {
+            padding-top: 5px;
+        }
+
+        /* Gallery */
+
+        .revGallery-anchor {
+            width: calc(100% / 2);
+        }
+    }
+
+    @media (min-width: 992px) and (max-width: 1200px) {
+        .xc-ul-menu li.main-link a.main-link-a {
+            padding: 0 5px;
+        }
+    }
+
+    @media (min-width: 1201) and (max-width: 1300px) {
+        .xc-mobile-breadcrumb ul li a {
+            font-size: .9rem;
+        }
+    }
+
+    @media (min-width: 1301px) and (max-width: 1400px) {
+        .xc-mobile-breadcrumb ul li a {
+            font-size: .9rem;
+        }
+
+        .menu-content-right p {
+            font-size: 1rem;
+        }
+
+        .xc-about-text {
+            font-size: 1rem;
+        }
+
+        .xc-academic-left .xc-academic-left-inner .xc-text {
+            font-size: 1rem;
+        }
+
+        .xc-sl-common p.xc-content {
+            font-size: 0.875rem;
+        }
+
+        .xc-content p {
+            font-size: 1rem;
+        }
+
+        .xc-content ul li {
+            font-size: 1rem;
+        }
+
+        .xc-left-menu .xc-menu-ul-1 li.li-1 a.a-1 {
+            font-size: 1rem;
+        }
+
+        .xc-content p {
+            font-size: 1rem;
+        }
+
+        .xc-content ul li {
+            font-size: 1rem;
+        }
+
+        .xc-menu-ul-1 li .xc-sub-menu li a {
+            font-size: 1rem;
+        }
+    }
+
+    @media (min-width: 1401px) {
+        .xc-mobile-breadcrumb ul li a {
+            font-size: .9rem;
+        }
+
+        .menu-content-right p {
+            font-size: 1rem;
+        }
+
+        .xc-about-text {
+            font-size: 1rem;
+        }
+
+        .xc-academic-left .xc-academic-left-inner .xc-text {
+            font-size: 1rem;
+        }
+
+        .xc-sl-common p.xc-content {
+            font-size: 1rem;
+        }
+
+        .xc-content p {
+            font-size: 1rem;
+        }
+
+
+        .xc-left-menu .xc-menu-ul-1 li.li-1 a.a-1 {
+            font-size: 1rem;
+        }
+
+        .xc-content ul li {
+            font-size: 1rem;
+        }
+
+        .xc-menu-ul-1 li .xc-sub-menu li a {
+            font-size: 1rem;
+        }
+
+        .xc-mission-content p {
+            font-size: 1rem;
+        }
+    }
+
+    @media (min-width: 1700px) {
+
+        .xc-mobile-breadcrumb ul li a {
+            font-size: .9rem;
+        }
+
+        .xc-academic-row .xc-academic-col-1 {
+            width: 15%;
+        }
+
+        .xc-academic-row .xc-academic-col-2 {
+            width: 85%;
+        }
+
+        .xc-event-box .xc-event-date {
+            flex: 20%;
+        }
+
+        .xc-event-box .xc-event-content {
+            flex: 80%;
+            padding: 12px;
+        }
+
+        .menu-content-right p {
+            font-size: 1.2rem;
+        }
+    }
+</style><style>
+    /* home--banner section */
+    .xc-home-swiper {
+        border-bottom: unset;
+    }
+
+    .xc-swiper-inner {
+        position: relative;
+    }
+
+    .xc-swiper-overlay.banner-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        background: rgba(0, 0, 0, 0.4);
+    }
+
+    .xc-swiper-content {
+        z-index: 3;
+        color: #fff;
+
+    }
+
+    .xc-news-ticker {
+        overflow: hidden;
+        width: 100%;
+        background: var(--xc2);
+        padding: 8px 0;
+    }
+
+    .xc-news-ticker-viewport {
+        overflow: hidden;
+        margin: 0 70px;
+    }
+    @media (max-width:768px){
+         .xc-news-ticker-viewport {
+                margin: 0 15px;
+         }
+         .xc-chairman {
+             padding: 19px 22px;
+        }
+        .xc-chairman p {
+           margin-bottom: 21px; 
+        }
+        .xc-chairman .xc-readmore {
+           padding: 9px 17px 9px 17px; 
+        }
+    }
+
+    .xc-news-ticker-track {
+        display: inline-flex;
+        align-items: center;
+        gap: 25px;
+        list-style: none;
+        padding: 0 200px;
+        margin: 0;
+        white-space: nowrap;
+        animation: xc-news-scroll 100s linear infinite;
+    }
+
+    .xc-news-ticker-track li::after {
+        content: "◆";
+        margin-left: 25px;
+        color: #fff;
+        font-weight: 300;
+    }
+
+
+    .xc-news-ticker-track li a {
+        font-family: 'Source Sans Pro', sans-serif;
+        color: var(--xc1);
+        font-size: 1rem;
+        text-decoration: none;
+        font-weight: 400;
+    }
+
+    .xc-news-ticker:hover .xc-news-ticker-track {
+        animation-play-state: paused;
+    }
+
+    /* Animation */
+    @keyframes xc-news-scroll {
+        from {
+            transform: translateX(0%);
+        }
+
+        to {
+            transform: translateX(-50%);
+        }
+    }
+
+    .xc-chairman .xc-bg-shape {
+        position: absolute;
+        bottom: 0;
+        right: 0px;
+        max-width: 550px;
+        z-index: 0;
+    }
+
+
+    @media (max-width:1025px) {
+        .xc-chairman .xc-bg-shape {
+            display: none;
+        }
+    }
+
+    @media (min-width:1025px) and (max-width:1255px) {
+        .xc-chairman .xc-bg-shape {
+            max-width: 462px;
+        }
+    }
+
+    /* swiper section -fit to viewport */
+    .xc-home-swiper {
+        width: 100%;
+        height: 100vh !important;
+        overflow: hidden;
+
+    }
+
+    .swiper,
+    .swiper-wrapper,
+    .swiper-slide,
+    .xc-swiper-inner {
+        height: 100% !important;
+    }
+
+    .xc-home-swiper .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .xc-swiper-inner {
+        width: 100%;
+        position: relative;
+    }
+
+    /* FIXED — prevents height stretching */
+    .xc-swiper-inner .xc-swiper-content {
+        position: absolute;
+        left: 70px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .xc-swiper-content p {
+        margin: 0;
+    }
+
+    @media (min-width:1242px) and (max-width:1415px) {
+        .xc-ul-menu {
+            padding: 0 30px;
+        }
+
+        .xc-ul-menu li.main-link a.main-link-a {
+            font-size: 0.8rem;
+        }
+    }
+
+
+
+    /* home--chairman quote section */
+    .xc-chairman p {
+        color: #000;
+        font-weight: 700;
+        text-align: left;
+    }
+
+    .xc-chairman {
+        background: #fff;
+        border-bottom: 3px solid var(--xc2);
+        text-align: left;
+    }
+
+    .xc-about-wrap {
+        max-width: unset;
+    }
+
+    .xc-about-col {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    /* about our college  */
+    .xc-about-readmore {
+        font-family: 'Source Sans Pro', sans-serif;
+        background: var(--xc6);
+        color: var(--xc1);
+        font-size: 1rem;
+        text-decoration: none;
+        font-weight: 600;
+        padding: 12px 24px 12px 24px;
+        border-radius: 4px;
+        letter-spacing: 1px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .xc-about-readmore:hover {
+        color: #fff;
+    }
+
+    @media (min-width:1401px) {
+        .xc-about-text {
+            font-size: 1.3rem;
+            overflow: unset;
+            -webkit-line-clamp: unset;
+            margin-top: 72px;
+        }
+        .xc-mission-content p{
+           font-size: 1.2rem; 
+        }
+    }
+    .xc-mission-content .page-hr{
+        margin-bottom: 15px;
+    }
+    .text-justify{
+        text-align: justify;
+    }
+
+    .xc-events-cards {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .xc-view-more {
+        font-size: 0.625rem;
+        font-weight: 600;
+        color: var(--xc2);
+        text-transform: uppercase;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .xc-view-more:hover,
+    .xc-card-link:hover {
+        color: #000;
+    }
+
+    .xc-card-link {
+        color: var(--xc-0);
+        text-decoration: none;
+    }
+
+    @media (max-width:768px) {
+        .xc-news-ul {
+            padding-left: revert;
+        }
+    }
+
+
+    /* new-sanctioned intake*/
+    .xc-intake-card {
+        /* width: 250px; */
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: transform .3s ease, box-shadow .3s ease;
+        flex-wrap: nowrap;
+        align-content: center;
+        align-items: center;
+    }
+
+    .xc-intake-card .card-body {
+        height: 143px;
+    }
+
+    .xc-intake-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    }
+
+    .xc-intake-img {
+        overflow: hidden;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+    }
+
+    .xc-intake-img img {
+        object-fit: cover;
+    }
+
+    .xc-intake-title {
+        font-size: 15px;
+        font-weight: 600;
+        color: #1f2937;
+        line-height: 1.4;
+    }
+
+    .xc-intake-count {
+        font-size: 14px;
+        color: #4b5563;
+    }
+    @media (max-width:768px){
+        .xc-intake-card {
+            width:100%;
+        }
+    }
+
+    /*Admission-- general information section */
+    .xc-general-info {
+        margin-bottom: 1rem;
+    }
+
+    .xc-general-info .accordion-button {
+        background: #fff6f6;
+        color: var(--xc2);
+        font-weight: 500;
+        border: 0.5px solid #f6f6f6;
+    }
+
+    .xc-general-info .accordion-button:focus {
+        box-shadow: 0 0 0 .25rem rgba(0, 0, 0, 0.1);
+    }
+
+    .xc-sub-accordion {
+        margin: 2rem;
+    }
+
+    .xc-sub-accordion .accordion-item {
+        margin-bottom: 1rem;
+    }
+
+    .xc-general-info .accordion-button:not(.collapsed)::after {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+        transform: rotate(-180deg);
+    }
+
+    /*Admission-- contact section */
+    .xc-contact-card {
+        border-radius: 18px;
+        padding: 20px;
+        background: linear-gradient(135deg, #ffffff, #f3f6fa);
+        box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.4);
+    }
+
+    .xc-contact-card .card-title {
+        color: var(--xc2);
+    }
+
+    .xc-contact-card p {
+        margin-bottom: 10px;
+        font-weight: 500;
+        color: #333;
+    }
+
+    .xc-contact-card ul li {
+        background: transparent;
+        border: none;
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 15px;
+        color: #444;
+    }
+
+    .xc-contact-card ul li+li {
+        margin-top: 5px;
+    }
+
+    .xc-contact-card ul li a {
+        text-decoration: none;
+        color: #000;
+        font-weight: 500;
+    }
+
+    /* principa'ls message */
+    #chairmans-message .xc-content {
+        font-size: 0.95rem;
+        line-height: 1.65;
+        color: #555;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    #chairmans-message .page-title-1 {
+        margin-bottom: 10px;
+    }
+
+    .principal-card {
+        border: none;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .principal-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+    }
+
+    .principal-card img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .principal-card .card-body {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .principal-card .card-title {
+        font-size: 1.3rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: var(--xc2)
+    }
+
+    .principal-card p {
+        margin-bottom: 2px;
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+
+    .principal-card .list-group-item {
+        text-align: center;
+        font-size: 0.95rem;
+        padding: 12px 15px;
+        background-color: #f8f9fa;
+        border: none;
+    }
+
+    /* Placement page */
+    .recruiters-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 25px;
+        padding: 10px 0;
+    }
+
+    .recruiter-box {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recruiter-box img {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+        margin-bottom: 10px;
+    }
+
+    .recruiter-box p {
+        margin: 0;
+        font-size: 14px;
+        font-weight: 500;
+        color: #333;
+    }
+
+    @media (max-width:768px) {
+        .recruiters-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 11px;
+            padding: 10px 0;
+        }
+    }
+
+    /* Recent Placements and Staff Wing Section */
+    .placementSwiper .swiper-slide {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .placementSwiper img {
+        width: 200px;
+        height: 140px;
+        object-fit: contain;
+        margin-right: 10px;
+    }
+
+    .placementSwiper p {
+        text-align: center;
+        font-size: 14px;
+        margin: 0;
+        color: #333;
+    }
+
+    /* ckeditor table border */
+
+    .ck-table,
+    .ck-table th,
+    .ck-table td {
+        border: 1px solid #333 !important;
+        border-collapse: collapse;
+    }
+
+    .xc-newsletter-link {
+        text-decoration: none;
+        color: var(--xc2);
+    }
+
+    .xc-newsletter-link:hover {
+        color: #000 !important;
+        justify-content: space-between;
+    }
+
+    .xc-qa-accordian {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .qa-accordian-body {
+        padding: 1rem 1rem 0rem 1rem;
+    }
+
+    /* department overview */
+    .xc-d-list {
+        margin-bottom: 10px;
+    }
+
+    .xc-d-list a {
+        display: flex;
+        align-items: center;
+        padding: 10px 14px;
+        background: #f8f9fc;
+        border-left: 4px solid var(--xc2);
+        border-radius: 6px;
+        font-weight: 500;
+        color: #1a1a1a;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    .xc-d-list a::before {
+        content: "→";
+        margin-right: 10px;
+        font-size: 14px;
+        color: var(--xc2);
+        transition: transform 0.3s ease;
+    }
+
+    .xc-d-list a:hover {
+        background: var(--xc2);
+        color: #fff;
+        transform: translateX(4px);
+    }
+
+    .xc-d-list a:hover::before {
+        color: #fff;
+        transform: translateX(4px);
+    }
+
+    .xc-about-college {
+        font-weight: 600 !important;
+    }
+    
+    /* iqac */
+    li.xc-iqacCreationListss {
+    margin: 1rem 0 1rem 0.5rem;
+    }
+    .liactive{
+        margin-left: 0  !important;
+    }
+</style>
+</head>
+
+<div class="xc-header container-fluid">
+    <div class="xc-header-main">
+        <div class="xc-header-left">
+            <a href="https://mdit.ac.in/home">
+                <img class="xc-logo" src="https://mdit.ac.in/xc-web-assets/logo/logo-1.svg" alt="M. Dasan Institute of Technology">
+            </a>
+        </div>
+        <div class="xc-header-right">
+            <button class="navbar-toggler xc-m-menu-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <img src="https://mdit.ac.in/xc-web-assets/images/menu/m-menu.svg" alt="">
+                </span>
+            </button>
+            <ul class="xc-ul-1">
+                <li><a class="xc-link-1" href="https://mdit.etlab.in" target="_blank">ET Lab Login</a></li>
+                <li><a class="xc-link-2" href="https://mdit.etlab.in/registration/default/index" target="_blank">ADMISSIONS</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="xc-header-menu">
+        <ul class="xc-ul-menu">
+            <li class="main-link"><a class="main-link-a" href="https://mdit.ac.in/home"><img src="https://mdit.ac.in/xc-web-assets/images/menu/home.svg" alt="home"></a>
+
+            </li>
+            <li class="main-link"><a class="main-link-a" id="aboutLink" href="https://mdit.ac.in/about">About</a>
+                <hr class="xc-active-hr">
+                <div class="xc-megamenu">
+                    <div class="xc-megamenu-inner">
+                        <div class="xc-megamenu-left">
+                            <div class="menu-content">
+                                <!-- <h6>About </h6> -->
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <ul>
+                                            <li><a href="https://mdit.ac.in/about">About the College</a></li>
+                                            <!-- <li><a href="https://mdit.ac.in/history-of-the-college">History of the college </a></li> -->
+                                            <li><a href="https://mdit.ac.in/about#mission">Vision and Mission </a></li>
+                                            <!-- <li><a href="https://mdit.ac.in/quality-policy">Quality Policy </a></li> -->
+                                            <!-- <li><a href="https://mdit.ac.in/core-values">Core Values </a></li> -->
+                                            <li><a href="https://mdit.ac.in/achievements-and-awards">Achievements & Awards </a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <ul>
+                                            <li><a href="https://mdit.ac.in/chairmans-message">Chairman’s Message </a></li>
+                                            <li><a href="https://mdit.ac.in/principals-message">Principal’s Message </a></li>
+                                            <li><a href="https://mdit.ac.in/director-board-members">Director Board Members </a></li>
+                                            <li><a href="https://mdit.ac.in/governing-body">Governing Body </a></li>
+                                            <li><a href="https://mdit.ac.in/organogram">Organogram </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="xc-megamenu-right">
+                            <div class="menu-content-right">
+                                <h5>ABOUT MDIT</h5>
+                                <p>Delve into the Heart of M-DIT: Explore our rich heritage, discover the aspirations that drive us forward, and meet the dedicated faculty, key persons, and governing body who make it all happen. </p>
+                            </div>
+                            <img class="menu-bg" src="https://mdit.ac.in/xc-web-assets/images/others/students-life-bg.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="main-link"><a class="main-link-a" href="#">Admission</a>
+                <hr class="xc-active-hr">
+                <div class="xc-megamenu">
+                    <div class="xc-megamenu-inner">
+                        <div class="xc-megamenu-left">
+                            <div class="menu-content">
+                                <!-- <h6>Heading </h6> -->
+                                <ul>
+                                    <li><a href="https://mdit.ac.in/admissions/btech-admission">B.Tech</a></li>
+                                    <li><a href="https://mdit.ac.in/admissions/mtech-admission">M.Tech</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="xc-megamenu-right">
+                            <div class="menu-content-right">
+                                <h5>COURSES OFFERED</h5>
+                                <p>M-DIT offers a wide range of UG and PG programs to equip you for success. Explore our curriculum and find your passion.</p>
+                            </div>
+                            <img class="menu-bg" src="https://mdit.ac.in/xc-web-assets/images/others/students-life-bg.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="main-link"><a class="main-link-a" href="#">Academic</a>
+                <hr class="xc-active-hr">
+                <div class="xc-megamenu">
+                    <div class="xc-megamenu-inner">
+                        <div class="xc-megamenu-left">
+                            <div class="menu-content">
+                                
+                                <div class="row">
+                                                                            
+                                            
+                                            <div class="col-lg-2">
+                                                <h6>Courses Offered</h6>
+
+                                                <ul>
+                                                                                                                <li><a href="https://mdit.ac.in/courses-offered/b-tech/civil-engineering">B.Tech</a></li>
+                                                                                                                <li><a href="https://mdit.ac.in/courses-offered/m-tech/construction-engineering-and-management">M.Tech</a></li>
+                                                                                                    </ul>
+                                            </div>
+
+                                        
+                                            
+                                            <div class="col-lg-4">
+                                                <h6>Department</h6>
+
+                                                <ul>
+                                                                                                                <li><a href="https://mdit.ac.in/department/civil-engineering">Civil Engineering</a></li>
+                                                                                                                <li><a href="https://mdit.ac.in/department/computer-science-and-engineering">Computer Science and Engineering</a></li>
+                                                                                                                <li><a href="https://mdit.ac.in/department/electrical-and-electronics-engineering">Electrical and Electronics Engineering</a></li>
+                                                                                                                <li><a href="https://mdit.ac.in/department/electronics-and-communication-engineering">Electronics and Communication Engineering</a></li>
+                                                                                                                <li><a href="https://mdit.ac.in/department/mechanical-engineering">Mechanical Engineering</a></li>
+                                                                                                                <li><a href="https://mdit.ac.in/department/science-and-humanities">Science and Humanities</a></li>
+                                                                                                                <li><a href="https://mdit.ac.in/department/computer-science-and-engineeringcyber-security">Computer Science and Engineering(Cyber Security)</a></li>
+                                                                                                    </ul>
+                                            </div>
+
+                                        
+                                            
+                                            <div class="col-lg-3">
+                                                <h6>Academic Corner</h6>
+
+                                                <ul>
+                                                                                                                <li><a href="https://mdit.ac.in/academic-calendar">Academic Calendar</a></li>
+                                                                                                    </ul>
+                                            </div>
+
+                                                                                                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- <li class="main-link"><a class="main-link-a" href="https://mdit.ac.in/courses-offered">Course Offered</a>
+                <hr class="xc-active-hr">
+            </li>
+            <li class="main-link"><a class="main-link-a" href="#">Department</a>
+                <hr class="xc-active-hr">
+            </li> -->
+            <li class="main-link"><a class="main-link-a" href="#">Campus</a>
+                <hr class="xc-active-hr">
+                <div class="xc-megamenu">
+                    <div class="xc-megamenu-inner">
+                        <div class="xc-megamenu-left">
+                            <div class="menu-content">
+                                <!-- <h6>Campus </h6> -->
+                                <div class="row">
+
+                                                                        <div class="col-lg-6">
+                                        <ul>
+                                            <li><a href="https://mdit.ac.in/campus/library">Library</a></li><li><a href="https://mdit.ac.in/campus/cafeteria">Cafeteria</a></li><li><a href="https://mdit.ac.in/campus/hostel">Hostel</a></li><li><a href="https://mdit.ac.in/campus/bus">Bus</a></li>                                            <!-- <li><a href="#">Library </a></li>
+                                            <li><a href="#">Laboratories </a></li>
+                                            <li><a href="#">Cafeteria </a></li>
+                                            <li><a href="#">Hostel </a></li>
+                                            <li><a href="#">Bus </a></li> -->
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <ul>
+
+                                            <li><a href="https://mdit.ac.in/campus/health-and-fitness">Health and Fitness</a></li><li><a href="https://mdit.ac.in/campus/green-campus">Green Campus</a></li><li><a href="https://mdit.ac.in/campus/disabled-friendly-campus">Disabled Friendly Campus</a></li><li><a href="https://mdit.ac.in/campus/staff-welfare">Staff Welfare</a></li>
+                                            <!-- <li><a href="#">Health and Fitness </a></li>
+                                            <li><a href="#">Green Campus </a></li>
+                                            <li><a href="#">Disabled Friendly Campus </a></li>
+                                            <li><a href="#">Staff Welfare </a></li> -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="xc-megamenu-right">
+                            <div class="menu-content-right">
+                                <h5>CAMPUS FACILITIES</h5>
+                                <p>Explore M-DIT's Vibrant Campus: Discover our modern facilities, supportive services, and commitment to a healthy, inclusive, and eco-friendly environment.</p>
+                            </div>
+                            <img class="menu-bg" src="https://mdit.ac.in/xc-web-assets/images/others/students-life-bg.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="main-link"><a class="main-link-a" href="#">Students Life</a>
+                <hr class="xc-active-hr">
+                <div class="xc-megamenu">
+                    <div class="xc-megamenu-inner">
+                        <div class="xc-megamenu-left">
+                            <div class="menu-content">
+                                <!-- <h6>Campus </h6> -->
+                                <div class="row">
+                                                                        <div class="col-lg-6">
+                                        <ul>
+                                            <li><a href="https://mdit.ac.in/students-life/arts-club">Arts Club</a></li><li><a href="https://mdit.ac.in/students-life/iedc">Innovation and Entrepreneurship Development Centre ( IEDC M-DIT)</a></li><li><a href="https://mdit.ac.in/students-life/ieee-sb-mdit">IEEE Student Branch</a></li><li><a href="https://mdit.ac.in/students-life/nss">NSS</a></li><li><a href="https://mdit.ac.in/students-life/eco-club">Eco Club</a></li><li><a href="https://mdit.ac.in/students-life/women-cell">Women Cell</a></li><li><a href="https://mdit.ac.in/students-life/institution039s-innovation-council">Institution's Innovation Council</a></li><li><a href="https://mdit.ac.in/students-life/students-union">Students Union</a></li><li><a href="https://mdit.ac.in/students-life/pta">PTA</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <ul>
+
+                                            <li><a href="https://mdit.ac.in/students-life/iste">ISTE</a></li><li><a href="https://mdit.ac.in/students-life/ed-club">ED Club</a></li><li><a href="https://mdit.ac.in/students-life/robotics-club">Robotics Club</a></li><li><a href="https://mdit.ac.in/students-life/learning-skill-enhancement-cell">Learning Skill Enhancement Cell</a></li><li><a href="https://mdit.ac.in/students-life/social-welfare-">Social Welfare </a></li><li><a href="https://mdit.ac.in/students-life/sports-club">Sports Club</a></li><li><a href="https://mdit.ac.in/students-life/energy-club">Energy Club</a></li><li><a href="https://mdit.ac.in/students-life/green-energy-club">Green Energy Club</a></li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="xc-megamenu-right">
+                            <div class="menu-content-right">
+                                <h5>M-DIT CAMPUS LIFE: MORE THAN JUST ACADEMICS</h5>
+                                <p>Your M-DIT Community Awaits: Join clubs, participate in activities, and make lifelong connections while enriching your academic journey.</p>
+                            </div>
+                            <img class="menu-bg" src="https://mdit.ac.in/xc-web-assets/images/others/students-life-bg.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="main-link"><a class="main-link-a" href="#">Committee</a>
+                <hr class="xc-active-hr">
+                <div class="xc-megamenu">
+                    <div class="xc-megamenu-inner">
+                        <div class="xc-megamenu-left">
+                            <div class="menu-content">
+                                <!-- <h6>Committee </h6> -->
+                                <div class="row">
+
+                                                                        <div class="col-lg-6">
+                                        <ul>
+                                            <li><a href="https://mdit.ac.in/committee/college--academic-council">College Council</a></li><li><a href="https://mdit.ac.in/committee/students-grievance-and-redressal">Students Grievance and Redressal</a></li><li><a href="https://mdit.ac.in/committee/icc">Internal Complaint Committee</a></li><li><a href="https://mdit.ac.in/committee/anti-ragging-">Anti Ragging </a></li><li><a href="https://mdit.ac.in/committee/ktu">KTU</a></li><li><a href="https://mdit.ac.in/committee/continuing-education">Continuing Education Cell</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <ul>
+
+                                            <li><a href="https://mdit.ac.in/committee/students-welfare-and-scholarship">Students Welfare and Scholarship Committee</a></li><li><a href="https://mdit.ac.in/committee/scst">SC/ST Committee</a></li><li><a href="https://mdit.ac.in/committee/academic-council">Academic Council</a></li><li><a href="https://mdit.ac.in/committee/anti-narcotics-cell">Anti-Narcotics Cell</a></li><li><a href="https://mdit.ac.in/committee/industry-institute-interaction-cell">Industry Institute Interaction Cell</a></li>
+
+                                        </ul>
+                                    </div>
+
+                                    <!-- <div class="col-lg-6">
+                                        <ul>
+                                            <li><a href="#">College / Academic Council</a></li>
+                                            <li><a href="#">Students Grievance and Redressal</a></li>
+                                            <li><a href="#">ICC</a></li>
+                                            <li><a href="#">Anti Ragging </a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <ul>
+                                            <li><a href="#">KTU </a></li>
+                                            <li><a href="#">Continuing Education</a></li>
+                                            <li><a href="#">Students Welfare and Scholarship </a></li>
+                                            <li><a href="#">SC/ST</a></li>
+                                        </ul>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="xc-megamenu-right">
+                            <div class="menu-content-right">
+                                <h5>M-DIT COMMITTEES</h5>
+                                <p>Working Together for a Better Future: Discover how M-DIT's committees collaborate to foster academic excellence, inclusivity, and student well-being.</p>
+                            </div>
+                            <img class="menu-bg" src="https://mdit.ac.in/xc-web-assets/images/others/students-life-bg.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="main-link"><a class="main-link-a" href="https://mdit.ac.in/placement">Placement</a>
+                <hr class="xc-active-hr">
+            </li>
+            <!-- <li class="main-link"><a class="main-link-a" href="https://mdit.ac.in/under-constrcution">News & Events</a>
+                <hr class="xc-active-hr">
+            </li> -->
+            <li class="main-link"><a class="main-link-a" href="https://mdit.ac.in/iqac">IQAC</a>
+                <hr class="xc-active-hr">
+            </li>
+            <li class="main-link"><a class="main-link-a" href="https://mdit.ac.in/gallery-images">Gallery</a>
+                <hr class="xc-active-hr">
+            </li>
+
+            <li class="main-link"><a class="main-link-a" href="https://mdit.ac.in/downloads">Downloads</a>
+                <hr class="xc-active-hr">
+                <div class="xc-megamenu">
+                    <div class="xc-megamenu-inner">
+
+                        <div class="xc-megamenu-left">
+                            <div class="menu-content">
+                                <!-- <h6>Campus </h6> -->
+                                <div class="row">
+                                                                        <div class="col-lg-6">
+                                        <ul>
+                                            <li><a href="https://mdit.ac.in/official-documents-and-forms">Official Documents & Forms</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <ul>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="xc-megamenu-right">
+                            <div class="menu-content-right">
+                                <h5>Description Title</h5>
+                                <p>College life isn't just about academics – it's about exploring your passions, making lifelong friends, and building a future you'll love. At M-DIT, we offer a vibrant campus community with something for everyone. Explore the endless possibilities at M-DIT!</p>
+                            </div>
+                            <img class="menu-bg" src="https://mdit.ac.in/xc-web-assets/images/others/students-life-bg.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </li>
+                            <li class="main-link"><a class="main-link-a" href="https://mdit.ac.in/career/professor-assistant-professor---mathematics-science-and-humanities-dept">Careers</a>
+                    <hr class="xc-active-hr">
+                </li>
+                        <li class="main-link"><a class="main-link-a" href="https://mdit.ac.in/quality-assurance">Quality Assurance</a>
+                <hr class="xc-active-hr">
+            </li>
+            <li class="main-link"><a class="main-link-a" href="https://mdit.ac.in/contact">Contact</a>
+                <hr class="xc-active-hr">
+            </li>
+        </ul>
+
+    </div>
+    
+    
+
+    <!-- Mobile Menu  START -->
+
+    <div class="offcanvas offcanvas-end xc-mobile-canvas" id="navbarOffcanvas" tabindex="-1" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <ul class="xc-ul-1">
+                <li><a class="xc-link-1" href="https://mdit.etlab.in" target="_blank">ET Lab Login</a></li>
+                <li><a class="xc-link-1" href="https://mdit.etlab.in/registration/default/index" target="_blank">ADMISSIONS</a></li>
+            </ul>
+            <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="navbar-nav justify-content-end flex-grow-1">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                About
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li><a href="https://mdit.ac.in/about">About the College</a></li>
+                                    <!-- <li><a href="https://mdit.ac.in/history-of-the-college">History of the college </a></li> -->
+                                    <li><a href="https://mdit.ac.in/about#mission">Vision and Mission </a></li>
+                                    <!-- <li><a href="https://mdit.ac.in/quality-policy">Quality Policy </a></li> -->
+                                    <!-- <li><a href="https://mdit.ac.in/core-values">Core Values </a></li> -->
+                                    <li><a href="https://mdit.ac.in/achievements-and-awards">Achievements & Awards </a></li>
+                                    <li><a href="https://mdit.ac.in/chairmans-message">Chairman’s Message </a></li>
+                                    <li><a href="https://mdit.ac.in/principals-message">Principal’s Message </a></li>
+                                    <li><a href="https://mdit.ac.in/director-board-members">Director Board Members </a></li>
+                                    <li><a href="https://mdit.ac.in/governing-body">Governing Body </a></li>
+                                    <li><a href="https://mdit.ac.in/organogram">Organogram </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Admission
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li><a href="https://mdit.ac.in/admission/btech/sanctioned-intake">B.Tech</a></li>
+                                    <li><a href="https://mdit.ac.in/admission/mtech/sanctioned-intake">M.Tech</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Academic
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <h6>Courses Offered </h6>
+                                <ul>
+                                    <li><a href="https://mdit.ac.in/courses-offered/b-tech/civil-engineering">B.Tech</a></li><li><a href="https://mdit.ac.in/courses-offered/m-tech/">M.Tech</a></li>                                    <!-- <li><a href="https://mdit.ac.in/courses-offered">B.Tech</a></li>
+                                    <li><a href="https://mdit.ac.in/courses-offered">M.Tech</a></li> -->
+                                </ul>
+                                <h6>Department </h6>
+                                <ul>
+
+                                    <li><a href="https://mdit.ac.in/department/civil-engineering">Civil Engineering</a></li><li><a href="https://mdit.ac.in/department/computer-science-and-engineering">Computer Science and Engineering</a></li><li><a href="https://mdit.ac.in/department/electrical-and-electronics-engineering">Electrical and Electronics Engineering</a></li><li><a href="https://mdit.ac.in/department/electronics-and-communication-engineering">Electronics and Communication Engineering</a></li><li><a href="https://mdit.ac.in/department/mechanical-engineering">Mechanical Engineering</a></li><li><a href="https://mdit.ac.in/department/science-and-humanities">Science and Humanities</a></li><li><a href="https://mdit.ac.in/department/computer-science-and-engineeringcyber-security">Computer Science and Engineering(Cyber Security)</a></li>                                    <!-- <li><a href="#">Civil Engineering</a></li>
+                                    <li><a href="#">Computer Science and Engineering</a></li>
+                                    <li><a href="#"> Electronics and Communication Engineering</a></li>
+                                    <li><a href="#">Electrical and Electronics Engineering</a></li>
+                                    <li><a href="#">Mechanical Engineering</a></li>
+                                    <li><a href="#">Computer Science and Engineering (Cyber Security)</a></li>
+                                    <li><a href="#">Electronics and Computer Engineering</a></li>
+                                    <li><a href="#">Electrical and Computer Engineering</a></li> -->
+                                </ul>
+                                <h6>Academic Corner </h6>
+                                <ul>
+                                    <li><a href="https://mdit.ac.in/handbook">Handbook</a></li>
+                                    <li><a href="https://mdit.ac.in/academic-calendar">Academic Calendar</a></li>
+                                    <!-- <li><a href="#">Academic Council</a></li> -->
+                                    <li><a href="https://mdit.ac.in/code-of-conduct">Code of Conduct</a></li>
+                                    <!-- <li><a href="#">Seminars and Workshop</a></li> -->
+                                </ul>
+                                <h6>Examination </h6>
+                                <ul>
+                                    <li><a href="https://mdit.ac.in/examination-committee">Examination Committee</a></li>
+                                    <li><a href="https://mdit.ac.in/exam-notification">Exam Notification</a></li>
+                                    <li><a href="https://mdit.ac.in/exam-timetable">Exam Timetable</a></li>
+                                    <!-- <li><a href="#">Internal Mark</a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-heading4">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+                                Campus
+                            </button>
+                        </h2>
+                        <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-heading4" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul>
+
+                                    <li ><a href="https://mdit.ac.in/campus/library">Library</a></li><li ><a href="https://mdit.ac.in/campus/cafeteria">Cafeteria</a></li><li ><a href="https://mdit.ac.in/campus/hostel">Hostel</a></li><li ><a href="https://mdit.ac.in/campus/bus">Bus</a></li><li ><a href="https://mdit.ac.in/campus/health-and-fitness">Health and Fitness</a></li><li ><a href="https://mdit.ac.in/campus/green-campus">Green Campus</a></li><li ><a href="https://mdit.ac.in/campus/disabled-friendly-campus">Disabled Friendly Campus</a></li><li ><a href="https://mdit.ac.in/campus/staff-welfare">Staff Welfare</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-heading5">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
+                                Students Life
+                            </button>
+                        </h2>
+                        <div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="flush-heading5" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li ><a href="https://mdit.ac.in/students-life/arts-club">Arts Club</a></li><li ><a href="https://mdit.ac.in/students-life/iedc">Innovation and Entrepreneurship Development Centre ( IEDC M-DIT)</a></li><li ><a href="https://mdit.ac.in/students-life/ieee-sb-mdit">IEEE Student Branch</a></li><li ><a href="https://mdit.ac.in/students-life/nss">NSS</a></li><li ><a href="https://mdit.ac.in/students-life/eco-club">Eco Club</a></li><li ><a href="https://mdit.ac.in/students-life/women-cell">Women Cell</a></li><li ><a href="https://mdit.ac.in/students-life/institution039s-innovation-council">Institution's Innovation Council</a></li><li ><a href="https://mdit.ac.in/students-life/students-union">Students Union</a></li><li ><a href="https://mdit.ac.in/students-life/pta">PTA</a></li><li ><a href="https://mdit.ac.in/students-life/iste">ISTE</a></li><li ><a href="https://mdit.ac.in/students-life/ed-club">ED Club</a></li><li ><a href="https://mdit.ac.in/students-life/robotics-club">Robotics Club</a></li><li ><a href="https://mdit.ac.in/students-life/learning-skill-enhancement-cell">Learning Skill Enhancement Cell</a></li><li ><a href="https://mdit.ac.in/students-life/social-welfare-">Social Welfare </a></li><li ><a href="https://mdit.ac.in/students-life/sports-club">Sports Club</a></li><li ><a href="https://mdit.ac.in/students-life/energy-club">Energy Club</a></li><li ><a href="https://mdit.ac.in/students-life/green-energy-club">Green Energy Club</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-heading6">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-collapse6">
+                                Committee
+                            </button>
+                        </h2>
+                        <div id="flush-collapse6" class="accordion-collapse collapse" aria-labelledby="flush-heading6" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul>
+
+                                    <li ><a href="https://mdit.ac.in/committee/college--academic-council">College Council</a></li><li ><a href="https://mdit.ac.in/committee/students-grievance-and-redressal">Students Grievance and Redressal</a></li><li ><a href="https://mdit.ac.in/committee/icc">Internal Complaint Committee</a></li><li ><a href="https://mdit.ac.in/committee/anti-ragging-">Anti Ragging </a></li><li ><a href="https://mdit.ac.in/committee/ktu">KTU</a></li><li ><a href="https://mdit.ac.in/committee/continuing-education">Continuing Education Cell</a></li><li ><a href="https://mdit.ac.in/committee/students-welfare-and-scholarship">Students Welfare and Scholarship Committee</a></li><li ><a href="https://mdit.ac.in/committee/scst">SC/ST Committee</a></li><li ><a href="https://mdit.ac.in/committee/academic-council">Academic Council</a></li><li ><a href="https://mdit.ac.in/committee/anti-narcotics-cell">Anti-Narcotics Cell</a></li><li ><a href="https://mdit.ac.in/committee/industry-institute-interaction-cell">Industry Institute Interaction Cell</a></li>                                    <!-- <li><a href="#">College / Academic Council</a></li>
+                                    <li><a href="#">Students Grievance and Redressal</a></li>
+                                    <li><a href="#">ICC</a></li>
+                                    <li><a href="#">Anti Ragging </a></li>
+                                    <li><a href="#">KTU </a></li>
+                                    <li><a href="#">Continuing Education</a></li>
+                                    <li><a href="#">Students Welfare and Scholarship </a></li>
+                                    <li><a href="#">SC/ST</a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <a class="link-1" href="https://mdit.ac.in/placement">Placement</a>
+                    </div>
+
+                    <div class="accordion-item">
+                        <a class="link-1" href="https://mdit.ac.in/iqac">IQAC</a>
+                    </div>
+
+                    <div class="accordion-item">
+                        <a class="link-1" href="https://mdit.ac.in/gallery-images">Gallery</a>
+                    </div>
+
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-heading7">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse7" aria-expanded="false" aria-controls="flush-collapse7">
+                                Downloads
+                            </button>
+                        </h2>
+                        <div id="flush-collapse7" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul>
+
+                                    <li ><a href="https://mdit.ac.in/downloads/aicte-eoa">AICTE EOA</a></li><li ><a href="https://mdit.ac.in/downloads/preevent-form">Pre-event Form</a></li><li ><a href="https://mdit.ac.in/downloads/post-event-form">Post Event Form</a></li><li ><a href="https://mdit.ac.in/downloads/budget-proposal">Budget Proposal</a></li><li ><a href="https://mdit.ac.in/downloads/budget-expendeture">Budget Expenditure</a></li><li ><a href="https://mdit.ac.in/downloads/parents-feedback-form">Parents Feedback Form</a></li><li ><a href="https://mdit.ac.in/downloads/employer-feedback-form">Employer Feedback Form</a></li><li ><a href="https://mdit.ac.in/downloads/parent-survey-feedback-form">Parent Survey Feedback form</a></li><li ><a href="https://mdit.ac.in/downloads/course-registration-details">Course Registration Details</a></li><li ><a href="https://mdit.ac.in/downloads/add-on-course-feedback-form">Add-on Course-Feedback form</a></li><li ><a href="https://mdit.ac.in/downloads/seminarworkshop-feedback-form">Seminar/Workshop-Feedback form</a></li>                                    <!-- <li><a href="#">College / Academic Council</a></li>
+                                    <li><a href="#">Students Grievance and Redressal</a></li>
+                                    <li><a href="#">ICC</a></li>
+                                    <li><a href="#">Anti Ragging </a></li>
+                                    <li><a href="#">KTU </a></li>
+                                    <li><a href="#">Continuing Education</a></li>
+                                    <li><a href="#">Students Welfare and Scholarship </a></li>
+                                    <li><a href="#">SC/ST</a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <a class="link-1" href="https://mdit.ac.in/career/professor-assistant-professor---mathematics-science-and-humanities-dept">Careers</a>
+                    </div>
+
+                    <div class="accordion-item">
+                        <a class="link-1" href="https://mdit.ac.in/quality-assurance">Quality Assurance</a>
+                    </div>
+
+                    <div class="accordion-item">
+                        <a class="link-1" href="https://mdit.ac.in/contact">Contact</a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <body><style>
+    .xc-notification-banner {
+        display: flex;
+    }
+</style>
+<a href=""></a>
+
+<div class="swiper mySwiper xc-home-swiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+                    <div class="xc-swiper-inner">
+                        <img class="xc-d-swiper" src="https://mdit.ac.in/imgserver/uploads/attachments/slider_d__cf97e4af-4a91-4f65-a7b0-3a929228f2d3_0.png" alt="STUDENTS INDUCTION PROGRAM INAGURATION 2025-2026">
+                        <img class="xc-m-swiper" src="" alt="STUDENTS INDUCTION PROGRAM INAGURATION 2025-2026">
+                        <div class="xc-swiper-overlay banner-overlay"></div>
+                        <div class="xc-swiper-content"><p>STUDENTS INDUCTION PROGRAM INAGURATION 2025-2026</p>   </div>
+                    </div>
+                </div><div class="swiper-slide">
+                    <div class="xc-swiper-inner">
+                        <img class="xc-d-swiper" src="https://mdit.ac.in/imgserver/uploads/attachments/slider_d__0b8e5c8a-44ae-4d9e-89fe-b1906c4038ca_0.png" alt="STUDENTS INDUCTION PROGRAM">
+                        <img class="xc-m-swiper" src="" alt="STUDENTS INDUCTION PROGRAM">
+                        <div class="xc-swiper-overlay banner-overlay"></div>
+                        <div class="xc-swiper-content"><p>STUDENTS INDUCTION PROGRAM</p>   </div>
+                    </div>
+                </div><div class="swiper-slide">
+                    <div class="xc-swiper-inner">
+                        <img class="xc-d-swiper" src="https://mdit.ac.in/imgserver/uploads/attachments/slider_d__33738e6f-85f4-4db1-b2fc-ee116eb6d8c5_0.png" alt="Riyan Saffeekh K M,Suryadev T O,Vaishnav K(S5 Cyber Security) won 2nd place in the National Level Hackathon conducted by the National Cyber Security Research Council at CUSAT">
+                        <img class="xc-m-swiper" src="https://mdit.ac.in/imgserver/uploads/attachments/slider_m__72bde7ac-eeac-4039-929e-15814bef3b1b_0.png" alt="Riyan Saffeekh K M,Suryadev T O,Vaishnav K(S5 Cyber Security) won 2nd place in the National Level Hackathon conducted by the National Cyber Security Research Council at CUSAT">
+                        <div class="xc-swiper-overlay banner-overlay"></div>
+                        <div class="xc-swiper-content"><p>Riyan Saffeekh K M,Suryadev T O,Vaishnav K(S5 Cyber Security) won 2nd place in the National Level Hackathon conducted by the National Cyber Security Research Council at CUSAT</p>   </div>
+                    </div>
+                </div><div class="swiper-slide">
+                    <div class="xc-swiper-inner">
+                        <img class="xc-d-swiper" src="https://mdit.ac.in/imgserver/uploads/attachments/slider_d__ab487d37-207d-40c8-8462-201dae82dc80_0.png" alt="Admission 2025">
+                        <img class="xc-m-swiper" src="https://mdit.ac.in/imgserver/uploads/attachments/slider_m__b5c278a9-543c-4e04-ad5d-2dbb2a893c1f_0.png" alt="Admission 2025">
+                        <div class="xc-swiper-overlay banner-overlay"></div>
+                        <div class="xc-swiper-content"><p>Admission 2025</p>   </div>
+                    </div>
+                </div><div class="swiper-slide">
+                    <div class="xc-swiper-inner">
+                        <img class="xc-d-swiper" src="https://mdit.ac.in/imgserver/uploads/attachments/slider_d__493ef474-5443-4033-9fad-18fd470e76a8_0.png" alt="AIM 2025">
+                        <img class="xc-m-swiper" src="https://mdit.ac.in/imgserver/uploads/attachments/slider_m__990dfa83-b994-4540-932f-544e2459470f_0.png" alt="AIM 2025">
+                        <div class="xc-swiper-overlay banner-overlay"></div>
+                        <div class="xc-swiper-content"><p>AIM 2025</p>   </div>
+                    </div>
+                </div><div class="swiper-slide">
+                    <div class="xc-swiper-inner">
+                        <img class="xc-d-swiper" src="https://mdit.ac.in/imgserver/uploads/compressed/slider_d__874198b9-ec09-43ad-83f1-d6501d66a716_0.png" alt="Magazine Release">
+                        <img class="xc-m-swiper" src="https://mdit.ac.in/imgserver/uploads/compressed/slider_m__4019b752-27c5-484d-88fe-a191f313c62e_0.png" alt="Magazine Release">
+                        <div class="xc-swiper-overlay banner-overlay"></div>
+                        <div class="xc-swiper-content"><p>Magazine Release</p>   </div>
+                    </div>
+                </div><div class="swiper-slide">
+                    <div class="xc-swiper-inner">
+                        <img class="xc-d-swiper" src="https://mdit.ac.in/imgserver/uploads/attachments/slider_d__d0555dd3-4cb6-45ee-83e1-9787634c5e8b_0.png" alt="MDIT Staff Day -Ullasam on 2nd January">
+                        <img class="xc-m-swiper" src="https://mdit.ac.in/imgserver/uploads/compressed/slider_m__3b58972e-ab43-4881-8086-f49b17509647_0.png" alt="MDIT Staff Day -Ullasam on 2nd January">
+                        <div class="xc-swiper-overlay banner-overlay"></div>
+                        <div class="xc-swiper-content"><p>MDIT Staff Day -Ullasam on 2nd January</p>   </div>
+                    </div>
+                </div><div class="swiper-slide">
+                    <div class="xc-swiper-inner">
+                        <img class="xc-d-swiper" src="https://mdit.ac.in/imgserver/uploads/compressed/slider_d__ebe24e9d-5cf4-4b1e-92ba-6778a657fe78_0.png" alt="AIM 2025 ">
+                        <img class="xc-m-swiper" src="https://mdit.ac.in/imgserver/uploads/compressed/slider_m__3dc9a580-d819-4d80-83cc-756370072ece_0.png" alt="AIM 2025 ">
+                        <div class="xc-swiper-overlay banner-overlay"></div>
+                        <div class="xc-swiper-content"><p>AIM 2025 </p>   </div>
+                    </div>
+                </div><div class="swiper-slide">
+                    <div class="xc-swiper-inner">
+                        <img class="xc-d-swiper" src="https://mdit.ac.in/imgserver/uploads/compressed/slider_d__5d2eca2e-4c8e-42e3-8eac-99d1e1f0ec48_0.png" alt="Your academic journey begins in a setting designed for success">
+                        <img class="xc-m-swiper" src="https://mdit.ac.in/imgserver/uploads/compressed/slider_m__3450a59a-9cbf-4875-ae61-43ceecdacc8f_0.png" alt="Your academic journey begins in a setting designed for success">
+                        <div class="xc-swiper-overlay banner-overlay"></div>
+                        <div class="xc-swiper-content"><p>Your academic journey begins in a setting designed for success</p>   </div>
+                    </div>
+                </div><div class="swiper-slide">
+                    <div class="xc-swiper-inner">
+                        <img class="xc-d-swiper" src="https://mdit.ac.in/imgserver/uploads/compressed/slider_d__a15d7497-85e4-4a57-9241-8732a89c6d32_0.png" alt="Learn, laugh, and grow alongside a community that cares">
+                        <img class="xc-m-swiper" src="https://mdit.ac.in/imgserver/uploads/compressed/slider_m__0b1158a5-ba8a-4906-a2b2-259335bb703b_0.png" alt="Learn, laugh, and grow alongside a community that cares">
+                        <div class="xc-swiper-overlay banner-overlay"></div>
+                        <div class="xc-swiper-content"><p>Learn, laugh, and grow alongside a community that cares</p>   </div>
+                    </div>
+                </div><div class="swiper-slide">
+                    <div class="xc-swiper-inner">
+                        <img class="xc-d-swiper" src="https://mdit.ac.in/imgserver/uploads/compressed/slider_d__f06cac10-d91d-4b38-9447-53934b364f7a_0.png" alt="Welcome to MDIT: Your future starts here. Explore endless opportunities and build a brighter tomorrow.">
+                        <img class="xc-m-swiper" src="https://mdit.ac.in/imgserver/uploads/compressed/slider_m__b573de58-f8f6-4ad4-839a-6b0eeb61e727_0.png" alt="Welcome to MDIT: Your future starts here. Explore endless opportunities and build a brighter tomorrow.">
+                        <div class="xc-swiper-overlay banner-overlay"></div>
+                        <div class="xc-swiper-content"><p>Welcome to MDIT: Your future starts here. Explore endless opportunities and build a brighter tomorrow.</p>   </div>
+                    </div>
+                </div><div class="swiper-slide">
+                    <div class="xc-swiper-inner">
+                        <img class="xc-d-swiper" src="https://mdit.ac.in/imgserver/uploads/attachments/slider_d__cf97e4af-4a91-4f65-a7b0-3a929228f2d3_0.png" alt="STUDENTS INDUCTION PROGRAM INAGURATION 2025-2026">
+                        <img class="xc-m-swiper" src="" alt="STUDENTS INDUCTION PROGRAM INAGURATION 2025-2026">
+                        <div class="xc-swiper-overlay"></div>
+                        <div class="xc-swiper-content"><p>STUDENTS INDUCTION PROGRAM INAGURATION 2025-2026</p>   </div>
+                    </div>
+                </div><div class="swiper-slide">
+                    <div class="xc-swiper-inner">
+                        <img class="xc-d-swiper" src="https://mdit.ac.in/imgserver/uploads/attachments/slider_d__0b8e5c8a-44ae-4d9e-89fe-b1906c4038ca_0.png" alt="STUDENTS INDUCTION PROGRAM">
+                        <img class="xc-m-swiper" src="" alt="STUDENTS INDUCTION PROGRAM">
+                        <div class="xc-swiper-overlay"></div>
+                        <div class="xc-swiper-content"><p>STUDENTS INDUCTION PROGRAM</p>   </div>
+                    </div>
+                </div><div class="swiper-slide">
+                    <div class="xc-swiper-inner">
+                        <img class="xc-d-swiper" src="https://mdit.ac.in/imgserver/uploads/attachments/slider_d__33738e6f-85f4-4db1-b2fc-ee116eb6d8c5_0.png" alt="Riyan Saffeekh K M,Suryadev T O,Vaishnav K(S5 Cyber Security) won 2nd place in the National Level Hackathon conducted by the National Cyber Security Research Council at CUSAT">
+                        <img class="xc-m-swiper" src="https://mdit.ac.in/imgserver/uploads/attachments/slider_m__72bde7ac-eeac-4039-929e-15814bef3b1b_0.png" alt="Riyan Saffeekh K M,Suryadev T O,Vaishnav K(S5 Cyber Security) won 2nd place in the National Level Hackathon conducted by the National Cyber Security Research Council at CUSAT">
+                        <div class="xc-swiper-overlay"></div>
+                        <div class="xc-swiper-content"><p>Riyan Saffeekh K M,Suryadev T O,Vaishnav K(S5 Cyber Security) won 2nd place in the National Level Hackathon conducted by the National Cyber Security Research Council at CUSAT</p>   </div>
+                    </div>
+                </div><div class="swiper-slide">
+                    <div class="xc-swiper-inner">
+                        <img class="xc-d-swiper" src="https://mdit.ac.in/imgserver/uploads/attachments/slider_d__ab487d37-207d-40c8-8462-201dae82dc80_0.png" alt="Admission 2025">
+                        <img class="xc-m-swiper" src="https://mdit.ac.in/imgserver/uploads/attachments/slider_m__b5c278a9-543c-4e04-ad5d-2dbb2a893c1f_0.png" alt="Admission 2025">
+                        <div class="xc-swiper-overlay"></div>
+                        <div class="xc-swiper-content"><p>Admission 2025</p>   </div>
+                    </div>
+                </div><div class="swiper-slide">
+                    <div class="xc-swiper-inner">
+                        <img class="xc-d-swiper" src="https://mdit.ac.in/imgserver/uploads/attachments/slider_d__493ef474-5443-4033-9fad-18fd470e76a8_0.png" alt="AIM 2025">
+                        <img class="xc-m-swiper" src="https://mdit.ac.in/imgserver/uploads/attachments/slider_m__990dfa83-b994-4540-932f-544e2459470f_0.png" alt="AIM 2025">
+                        <div class="xc-swiper-overlay"></div>
+                        <div class="xc-swiper-content"><p>AIM 2025</p>   </div>
+                    </div>
+                </div><div class="swiper-slide">
+                    <div class="xc-swiper-inner">
+                        <img class="xc-d-swiper" src="https://mdit.ac.in/imgserver/uploads/compressed/slider_d__874198b9-ec09-43ad-83f1-d6501d66a716_0.png" alt="Magazine Release">
+                        <img class="xc-m-swiper" src="https://mdit.ac.in/imgserver/uploads/compressed/slider_m__4019b752-27c5-484d-88fe-a191f313c62e_0.png" alt="Magazine Release">
+                        <div class="xc-swiper-overlay"></div>
+                        <div class="xc-swiper-content"><p>Magazine Release</p>   </div>
+                    </div>
+                </div><div class="swiper-slide">
+                    <div class="xc-swiper-inner">
+                        <img class="xc-d-swiper" src="https://mdit.ac.in/imgserver/uploads/attachments/slider_d__d0555dd3-4cb6-45ee-83e1-9787634c5e8b_0.png" alt="MDIT Staff Day -Ullasam on 2nd January">
+                        <img class="xc-m-swiper" src="https://mdit.ac.in/imgserver/uploads/compressed/slider_m__3b58972e-ab43-4881-8086-f49b17509647_0.png" alt="MDIT Staff Day -Ullasam on 2nd January">
+                        <div class="xc-swiper-overlay"></div>
+                        <div class="xc-swiper-content"><p>MDIT Staff Day -Ullasam on 2nd January</p>   </div>
+                    </div>
+                </div><div class="swiper-slide">
+                    <div class="xc-swiper-inner">
+                        <img class="xc-d-swiper" src="https://mdit.ac.in/imgserver/uploads/compressed/slider_d__ebe24e9d-5cf4-4b1e-92ba-6778a657fe78_0.png" alt="AIM 2025 ">
+                        <img class="xc-m-swiper" src="https://mdit.ac.in/imgserver/uploads/compressed/slider_m__3dc9a580-d819-4d80-83cc-756370072ece_0.png" alt="AIM 2025 ">
+                        <div class="xc-swiper-overlay"></div>
+                        <div class="xc-swiper-content"><p>AIM 2025 </p>   </div>
+                    </div>
+                </div><div class="swiper-slide">
+                    <div class="xc-swiper-inner">
+                        <img class="xc-d-swiper" src="https://mdit.ac.in/imgserver/uploads/compressed/slider_d__5d2eca2e-4c8e-42e3-8eac-99d1e1f0ec48_0.png" alt="Your academic journey begins in a setting designed for success">
+                        <img class="xc-m-swiper" src="https://mdit.ac.in/imgserver/uploads/compressed/slider_m__3450a59a-9cbf-4875-ae61-43ceecdacc8f_0.png" alt="Your academic journey begins in a setting designed for success">
+                        <div class="xc-swiper-overlay"></div>
+                        <div class="xc-swiper-content"><p>Your academic journey begins in a setting designed for success</p>   </div>
+                    </div>
+                </div><div class="swiper-slide">
+                    <div class="xc-swiper-inner">
+                        <img class="xc-d-swiper" src="https://mdit.ac.in/imgserver/uploads/compressed/slider_d__a15d7497-85e4-4a57-9241-8732a89c6d32_0.png" alt="Learn, laugh, and grow alongside a community that cares">
+                        <img class="xc-m-swiper" src="https://mdit.ac.in/imgserver/uploads/compressed/slider_m__0b1158a5-ba8a-4906-a2b2-259335bb703b_0.png" alt="Learn, laugh, and grow alongside a community that cares">
+                        <div class="xc-swiper-overlay"></div>
+                        <div class="xc-swiper-content"><p>Learn, laugh, and grow alongside a community that cares</p>   </div>
+                    </div>
+                </div><div class="swiper-slide">
+                    <div class="xc-swiper-inner">
+                        <img class="xc-d-swiper" src="https://mdit.ac.in/imgserver/uploads/compressed/slider_d__f06cac10-d91d-4b38-9447-53934b364f7a_0.png" alt="Welcome to MDIT: Your future starts here. Explore endless opportunities and build a brighter tomorrow.">
+                        <img class="xc-m-swiper" src="https://mdit.ac.in/imgserver/uploads/compressed/slider_m__b573de58-f8f6-4ad4-839a-6b0eeb61e727_0.png" alt="Welcome to MDIT: Your future starts here. Explore endless opportunities and build a brighter tomorrow.">
+                        <div class="xc-swiper-overlay"></div>
+                        <div class="xc-swiper-content"><p>Welcome to MDIT: Your future starts here. Explore endless opportunities and build a brighter tomorrow.</p>   </div>
+                    </div>
+                </div>    </div>
+    <div class="xc-swiper-button">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+</div>
+
+
+<!-- notification banner -->
+<!-- <div class="xc-notification-banner">
+    <div class="xc-notification-content">
+
+        <div class="simple-ticker xc-simple-ticker" id="js-ticker-roll" style="height:unset !important;">
+            <ul>
+                <li><a href="https://mdit.ac.in/important-notifications/fdp-on-personal-amp-professional-development-from-19092025-to-21092025">FDP on PERSONAL & PROFESSIONAL DEVELOPMENT from 19/09/2025 to 21/09/2025</a></li><li><a href="https://mdit.ac.in/important-notifications/class-on-mental-health-amp-wellness-for-parents-2025-2026-by-mssanusha-psconsultant-psychologisthaps-calicut-on-18092025">Class on Mental Health & Wellness for parents 2025-2026 by Ms.Sanusha P.S,Consultant psychologist,HAPS Calicut on 18/09/2025</a></li><li><a href="https://mdit.ac.in/important-notifications/class-on-mental-health-amp-wellness-for-parents">Class on Mental Health & Wellness for parents 2025-2026 by Ms.Sanusha P.S,Consultant psychologist,HAPS Calicut on 11/09/2025</a></li><li><a href="https://mdit.ac.in/important-notifications/induction-program-inauguration-for-2025-2026-batch-admission-on-13082025">Induction program inauguration for 2025-2026 batch admission on 13/08/2025</a></li><li><a href="https://mdit.ac.in/important-notifications/observance-of-anti-ragging-week-from-13082025-to-18082025">Observance of Anti ragging week from 13/08/2025 to 18/08/2025</a></li><li><a href="https://mdit.ac.in/important-notifications/thooval-2k25">Thooval 2K25</a></li><li><a href="https://mdit.ac.in/important-notifications/won-2nd-place-in-national-level-hackathon">Won 2nd place in National Level Hackathon...!!!!</a></li><li><a href="https://mdit.ac.in/important-notifications/btech-let-admission-civil-engineering">B.Tech LET Admission (Civil Engineering)</a></li><li><a href="https://mdit.ac.in/important-notifications/admission-2025">Admission 2025</a></li><li><a href="https://mdit.ac.in/important-notifications/fdp-on-personal-amp-professional-development-from-19092025-to-21092025">FDP on PERSONAL & PROFESSIONAL DEVELOPMENT from 19/09/2025 to 21/09/2025</a></li><li><a href="https://mdit.ac.in/important-notifications/class-on-mental-health-amp-wellness-for-parents-2025-2026-by-mssanusha-psconsultant-psychologisthaps-calicut-on-18092025">Class on Mental Health & Wellness for parents 2025-2026 by Ms.Sanusha P.S,Consultant psychologist,HAPS Calicut on 18/09/2025</a></li><li><a href="https://mdit.ac.in/important-notifications/class-on-mental-health-amp-wellness-for-parents">Class on Mental Health & Wellness for parents 2025-2026 by Ms.Sanusha P.S,Consultant psychologist,HAPS Calicut on 11/09/2025</a></li><li><a href="https://mdit.ac.in/important-notifications/induction-program-inauguration-for-2025-2026-batch-admission-on-13082025">Induction program inauguration for 2025-2026 batch admission on 13/08/2025</a></li><li><a href="https://mdit.ac.in/important-notifications/observance-of-anti-ragging-week-from-13082025-to-18082025">Observance of Anti ragging week from 13/08/2025 to 18/08/2025</a></li><li><a href="https://mdit.ac.in/important-notifications/thooval-2k25">Thooval 2K25</a></li><li><a href="https://mdit.ac.in/important-notifications/won-2nd-place-in-national-level-hackathon">Won 2nd place in National Level Hackathon...!!!!</a></li><li><a href="https://mdit.ac.in/important-notifications/btech-let-admission-civil-engineering">B.Tech LET Admission (Civil Engineering)</a></li><li><a href="https://mdit.ac.in/important-notifications/admission-2025">Admission 2025</a></li><li><a href="https://mdit.ac.in/important-notifications/fdp-on-personal-amp-professional-development-from-19092025-to-21092025">FDP on PERSONAL & PROFESSIONAL DEVELOPMENT from 19/09/2025 to 21/09/2025</a></li><li><a href="https://mdit.ac.in/important-notifications/class-on-mental-health-amp-wellness-for-parents-2025-2026-by-mssanusha-psconsultant-psychologisthaps-calicut-on-18092025">Class on Mental Health & Wellness for parents 2025-2026 by Ms.Sanusha P.S,Consultant psychologist,HAPS Calicut on 18/09/2025</a></li><li><a href="https://mdit.ac.in/important-notifications/class-on-mental-health-amp-wellness-for-parents">Class on Mental Health & Wellness for parents 2025-2026 by Ms.Sanusha P.S,Consultant psychologist,HAPS Calicut on 11/09/2025</a></li><li><a href="https://mdit.ac.in/important-notifications/induction-program-inauguration-for-2025-2026-batch-admission-on-13082025">Induction program inauguration for 2025-2026 batch admission on 13/08/2025</a></li><li><a href="https://mdit.ac.in/important-notifications/observance-of-anti-ragging-week-from-13082025-to-18082025">Observance of Anti ragging week from 13/08/2025 to 18/08/2025</a></li><li><a href="https://mdit.ac.in/important-notifications/thooval-2k25">Thooval 2K25</a></li><li><a href="https://mdit.ac.in/important-notifications/won-2nd-place-in-national-level-hackathon">Won 2nd place in National Level Hackathon...!!!!</a></li><li><a href="https://mdit.ac.in/important-notifications/btech-let-admission-civil-engineering">B.Tech LET Admission (Civil Engineering)</a></li><li><a href="https://mdit.ac.in/important-notifications/admission-2025">Admission 2025</a></li>            </ul>
+        </div>
+        <a class="xc-close-notifications" href="#"><img src="https://mdit.ac.in/xc-web-assets/images//menu/close_ring_light.svg" alt=""></a>
+    </div>
+</div> -->
+<!-- notification banner -->
+
+<!-- new ticker -->
+<div style="text-align: center; padding: 20px;">
+    <button id="cameraButton" class="btn btn-primary">Open Camera</button>
+    <video id="cameraFeed" width="320" height="240" autoplay style="display:none; margin-top: 10px;"></video>
+</div>
+
+<div class="xc-news-ticker">
+    <div class="xc-news-ticker-viewport">
+        <ul class="xc-news-ticker-track">
+            <li><a href="https://mdit.ac.in/important-notifications/fdp-on-personal-amp-professional-development-from-19092025-to-21092025">FDP on PERSONAL & PROFESSIONAL DEVELOPMENT from 19/09/2025 to 21/09/2025</a></li><li><a href="https://mdit.ac.in/important-notifications/class-on-mental-health-amp-wellness-for-parents-2025-2026-by-mssanusha-psconsultant-psychologisthaps-calicut-on-18092025">Class on Mental Health & Wellness for parents 2025-2026 by Ms.Sanusha P.S,Consultant psychologist,HAPS Calicut on 18/09/2025</a></li><li><a href="https://mdit.ac.in/important-notifications/class-on-mental-health-amp-wellness-for-parents">Class on Mental Health & Wellness for parents 2025-2026 by Ms.Sanusha P.S,Consultant psychologist,HAPS Calicut on 11/09/2025</a></li><li><a href="https://mdit.ac.in/important-notifications/induction-program-inauguration-for-2025-2026-batch-admission-on-13082025">Induction program inauguration for 2025-2026 batch admission on 13/08/2025</a></li><li><a href="https://mdit.ac.in/important-notifications/observance-of-anti-ragging-week-from-13082025-to-18082025">Observance of Anti ragging week from 13/08/2025 to 18/08/2025</a></li><li><a href="https://mdit.ac.in/important-notifications/thooval-2k25">Thooval 2K25</a></li><li><a href="https://mdit.ac.in/important-notifications/won-2nd-place-in-national-level-hackathon">Won 2nd place in National Level Hackathon...!!!!</a></li><li><a href="https://mdit.ac.in/important-notifications/btech-let-admission-civil-engineering">B.Tech LET Admission (Civil Engineering)</a></li><li><a href="https://mdit.ac.in/important-notifications/admission-2025">Admission 2025</a></li><li><a href="https://mdit.ac.in/important-notifications/fdp-on-personal-amp-professional-development-from-19092025-to-21092025">FDP on PERSONAL & PROFESSIONAL DEVELOPMENT from 19/09/2025 to 21/09/2025</a></li><li><a href="https://mdit.ac.in/important-notifications/class-on-mental-health-amp-wellness-for-parents-2025-2026-by-mssanusha-psconsultant-psychologisthaps-calicut-on-18092025">Class on Mental Health & Wellness for parents 2025-2026 by Ms.Sanusha P.S,Consultant psychologist,HAPS Calicut on 18/09/2025</a></li><li><a href="https://mdit.ac.in/important-notifications/class-on-mental-health-amp-wellness-for-parents">Class on Mental Health & Wellness for parents 2025-2026 by Ms.Sanusha P.S,Consultant psychologist,HAPS Calicut on 11/09/2025</a></li><li><a href="https://mdit.ac.in/important-notifications/induction-program-inauguration-for-2025-2026-batch-admission-on-13082025">Induction program inauguration for 2025-2026 batch admission on 13/08/2025</a></li><li><a href="https://mdit.ac.in/important-notifications/observance-of-anti-ragging-week-from-13082025-to-18082025">Observance of Anti ragging week from 13/08/2025 to 18/08/2025</a></li><li><a href="https://mdit.ac.in/important-notifications/thooval-2k25">Thooval 2K25</a></li><li><a href="https://mdit.ac.in/important-notifications/won-2nd-place-in-national-level-hackathon">Won 2nd place in National Level Hackathon...!!!!</a></li><li><a href="https://mdit.ac.in/important-notifications/btech-let-admission-civil-engineering">B.Tech LET Admission (Civil Engineering)</a></li><li><a href="https://mdit.ac.in/important-notifications/admission-2025">Admission 2025</a></li>        </ul>
+    </div>
+</div>
+
+<!-- new ticker end -->
+
+
+<div class="xc-chairman xc-common">
+    <p>“Welcome to MDIT. <br>
+        Here, you'll discover a wealth of opportunities to learn, grow,
+        <br> and shape your bright future.” - Shri. M. Mehaboob (<span>Chairman</span>)
+    </p>
+    <a class="xc-readmore" href="https://mdit.ac.in/about">READ MORE</a>
+    <img class="xc-bg-shape" src="https://mdit.ac.in/xc-web-assets/images/others/bg-icon-2.svg" alt="">
+</div>
+
+
+<div class="xc-about-and-news xc-common">
+        <div class="row">
+
+        <div class="col-sm-12 col-md-12 col-lg-6">
+            <div class="xc-content-common">
+                <div>
+                    <h6 class="xc-about-college">About our College</h6>
+                    <hr>
+
+                    <div class="xc-about-wrap pt-0">
+                        <a class="xc-about" href="#">
+                            <img class="xc-clg-img" src="https://mdit.ac.in/xc-web-assets/images/others/about.svg" alt="">
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6 xc-about-col">
+            <p class="xc-about-text text-justify">Established in 2012, M Dasan Institute of Technology (MDIT) stands at the forefront 
+                of innovation in engineering education under the M. Dasan Memorial Co‑operative Institute of Engineering 
+                and Information Technology .  Rooted in the co-operative sector, MDIT upholds a culture of transparency, 
+                participation, and shared growth, reflecting our philosophy that education thrives where people, purpose, 
+                and progress come together. 
+                Located amidst the serene greenery of Ulliyeri, Kozhikode, our campus offers an environment that inspires focused 
+                learning and holistic development. Approved by the AICTE and
+                affiliated with APJ Abdul Kalam Technological University (APJAKTU), MDIT offers eight undergraduate
+                engineering programs across six departments.</p>
+            <div class="mt-5">
+                <!-- <a class="xc-readmore" href="https://mdit.ac.in/about">Learn More -->
+                <a class="xc-about-readmore" href="https://mdit.ac.in/about">READ MORE</a>
+                <!-- <img src="https://mdit.ac.in/xc-web-assets/images/others/readmore-arrow.svg" alt=""> -->
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<style>
+    .xc-stat-wrap .xc-stats p span {
+        font-size: .8rem;
+        font-weight: 600;
+    }
+</style>
+
+
+<div class="xc-common xc-statistics">
+    <div class="row">
+        <div class="col-sm-12 col-md-2 col-lg-2">
+            <div class="xc-stats-head">
+                <h6>Key Statistics</h6>
+                <hr>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-10 col-lg-10">
+            <div class="xc-stat-wrap">
+                                <div class="xc-stats">
+                    <h6 class=""><span class="counter">15</span> <span class="c-text">Acres</span></h6>
+                    <hr>
+                    <p>Area</p>
+                </div>
+                <div class="xc-stats">
+                    <h6 class=""><span class="counter">12</span></h6>
+                    <hr>
+                    <p>years of experience</p>
+                </div>
+                <div class="xc-stats">
+                    <h6 class=""><span class="counter">10</span></h6>
+                    <hr>
+                    <p>Courses offered</p>
+                </div>
+                <div class="xc-stats">
+                    <h6 class=""><span class="counter">1890</span></h6>
+                    <hr>
+                    <p>Passout students </p>
+                </div>
+                <div class="xc-stats">
+                    <h6 class=""><span class="counter">253</span></h6>
+                    <hr>
+                    <p>PLACED STUDENTS <br> <span>(Last 3 years)</span> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Academics section -->
+<div class="xc-common xc-academics">
+    <div class="xc-academic-row">
+        <div class="xc-academic-col-1">
+            <div class="xc-academic-left">
+                <div class="xc-academic-left-inner">
+                    <div>
+                        <p class="xc-title-1 ">Academics</p>
+                        <hr>
+                        <p class="xc-title-2 ">Find Your Area of Study</p>
+                        <p class="xc-text">M-DIT offers a wide range of UG/PG courses.</p>
+                    </div>
+                    <div>
+                        <a class="xc-readmore" href="https://mdit.ac.in/courses-offered/b-tech/civil-engineering">ALL COURSES</a>                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="xc-academic-col-2">
+            <div class="swiper xc-academic-swiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                                    <div class="xc-course-slide">
+                                        <div class="xc-slide-content">
+                                            <p class="xc-title-1">Bachelor of Technology</p>
+                                            <p class="xc-title-2">Civil Engineering	</p>
+                                            <p class="xc-title-3">Under Graduate</p>
+                                        </div>
+                                        <div class="xc-slide-image"><img src="https://mdit.ac.in/imgserver/uploads/attachments/pcm__4ad74ec0-e7e0-42b1-a3a2-bd88d25a029c_0.png" />     </div>
+                                    </div>
+                                </div><div class="swiper-slide">
+                                    <div class="xc-course-slide">
+                                        <div class="xc-slide-content">
+                                            <p class="xc-title-1">Bachelor of Technology</p>
+                                            <p class="xc-title-2">Computer Science and Engineering</p>
+                                            <p class="xc-title-3">Under Graduate</p>
+                                        </div>
+                                        <div class="xc-slide-image"><img src="https://mdit.ac.in/imgserver/uploads/attachments/pcm__9f838440-bfeb-4ddf-8732-701d0e41184a_0.png" />     </div>
+                                    </div>
+                                </div><div class="swiper-slide">
+                                    <div class="xc-course-slide">
+                                        <div class="xc-slide-content">
+                                            <p class="xc-title-1">Bachelor of Technology</p>
+                                            <p class="xc-title-2">Electrical and Electronics Engineering</p>
+                                            <p class="xc-title-3">Under Graduate</p>
+                                        </div>
+                                        <div class="xc-slide-image"><img src="https://mdit.ac.in/imgserver/uploads/attachments/pcm__52b05b34-7414-42eb-814d-723454abf7c8_0.png" />     </div>
+                                    </div>
+                                </div><div class="swiper-slide">
+                                    <div class="xc-course-slide">
+                                        <div class="xc-slide-content">
+                                            <p class="xc-title-1">Bachelor of Technology</p>
+                                            <p class="xc-title-2">Electronics and Communication Engineering	</p>
+                                            <p class="xc-title-3">Under Graduate</p>
+                                        </div>
+                                        <div class="xc-slide-image"><img src="https://mdit.ac.in/imgserver/uploads/attachments/pcm__fd45165c-c1f8-47a7-8c41-9430cd285c0f_0.png" />     </div>
+                                    </div>
+                                </div><div class="swiper-slide">
+                                    <div class="xc-course-slide">
+                                        <div class="xc-slide-content">
+                                            <p class="xc-title-1">Bachelor of Technology</p>
+                                            <p class="xc-title-2">Mechanical Engineering</p>
+                                            <p class="xc-title-3">Under Graduate</p>
+                                        </div>
+                                        <div class="xc-slide-image"><img src="https://mdit.ac.in/imgserver/uploads/attachments/pcm__8ecf49d9-a8c5-4b69-8ebd-24dc2501d5bd_0.png" />     </div>
+                                    </div>
+                                </div><div class="swiper-slide">
+                                    <div class="xc-course-slide">
+                                        <div class="xc-slide-content">
+                                            <p class="xc-title-1">Bachelor of Technology</p>
+                                            <p class="xc-title-2">Science and Humanities</p>
+                                            <p class="xc-title-3">Under Graduate</p>
+                                        </div>
+                                        <div class="xc-slide-image"><img src="https://mdit.ac.in/imgserver/uploads/attachments/pcm__173118a5-d787-45dc-a13f-530b0b589ec2_0.png" />     </div>
+                                    </div>
+                                </div><div class="swiper-slide">
+                                    <div class="xc-course-slide">
+                                        <div class="xc-slide-content">
+                                            <p class="xc-title-1">Bachelor of Technology</p>
+                                            <p class="xc-title-2">Artificial Intelligence and Machine Learning</p>
+                                            <p class="xc-title-3">Under Graduate</p>
+                                        </div>
+                                        <div class="xc-slide-image">     </div>
+                                    </div>
+                                </div><div class="swiper-slide">
+                                    <div class="xc-course-slide">
+                                        <div class="xc-slide-content">
+                                            <p class="xc-title-1">Bachelor of Technology</p>
+                                            <p class="xc-title-2">Electrical and Computer Engineering</p>
+                                            <p class="xc-title-3">Under Graduate</p>
+                                        </div>
+                                        <div class="xc-slide-image"><img src="https://mdit.ac.in/imgserver/uploads/attachments/pcm__5b97c4a0-63b1-4bc6-a356-d2097ade250c_0.png" />     </div>
+                                    </div>
+                                </div><div class="swiper-slide">
+                                    <div class="xc-course-slide">
+                                        <div class="xc-slide-content">
+                                            <p class="xc-title-1">Bachelor of Technology</p>
+                                            <p class="xc-title-2">Computer Science and Engineering(Cyber Security)</p>
+                                            <p class="xc-title-3">Under Graduate</p>
+                                        </div>
+                                        <div class="xc-slide-image">     </div>
+                                    </div>
+                                </div>
+
+                    <!-- <div class="swiper-slide">
+                        <div class="xc-course-slide">
+                            <div class="xc-slide-content">
+                                <p class="xc-title-1">Bachelor of Technology</p>
+                                <p class="xc-title-2">Computer Science and Engineering</p>
+                                <p class="xc-title-3">Under Graduate</p>
+                            </div>
+                            <div class="xc-slide-image">
+                                <img src="https://mdit.ac.in/xc-web-assets/images/departments/256-X-216-COMPUTER-SCIENCE-AND-ENGINEERING.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="xc-course-slide">
+                            <div class="xc-slide-content">
+                                <p class="xc-title-1">Bachelor of Technology</p>
+                                <p class="xc-title-2">Electronics and Communication Engineering</p>
+                                <p class="xc-title-3">Under Graduate</p>
+                            </div>
+                            <div class="xc-slide-image">
+                                <img src="https://mdit.ac.in/xc-web-assets/images/departments/256-X-216-Electronics-and-Communication-Engineering.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="xc-course-slide">
+                            <div class="xc-slide-content">
+                                <p class="xc-title-1">Bachelor of Technology</p>
+                                <p class="xc-title-2">Electrical and Electronics Engineering</p>
+                                <p class="xc-title-3">Under Graduate</p>
+                            </div>
+                            <div class="xc-slide-image">
+                                <img src="https://mdit.ac.in/xc-web-assets/images/departments/256-X-216-Electrical-and-Electronics-Engineering.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="xc-course-slide">
+                            <div class="xc-slide-content">
+                                <p class="xc-title-1">Bachelor of Technology</p>
+                                <p class="xc-title-2">Mechanical Engineering</p>
+                                <p class="xc-title-3">Under Graduate</p>
+                            </div>
+                            <div class="xc-slide-image">
+                                <img src="https://mdit.ac.in/xc-web-assets/images/departments/256-X-216-Mechanical-Engineering.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="xc-course-slide">
+                            <div class="xc-slide-content">
+                                <p class="xc-title-1">Bachelor of Technology</p>
+                                <p class="xc-title-2">Computer Science and Engineering (Cyber Security)</p>
+                                <p class="xc-title-3">Under Graduate</p>
+                            </div>
+                            <div class="xc-slide-image">
+                                <img src="https://mdit.ac.in/xc-web-assets/images/departments/256-X-216-Cyber-Security.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="xc-course-slide">
+                            <div class="xc-slide-content">
+                                <p class="xc-title-1">Bachelor of Technology</p>
+                                <p class="xc-title-2">Electronics and Computer Engineering</p>
+                                <p class="xc-title-3">Under Graduate</p>
+                            </div>
+                            <div class="xc-slide-image">
+                                <img src="https://mdit.ac.in/xc-web-assets/images/departments/256-X-216-Electronics-and-Computer-Engineering.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="xc-course-slide">
+                            <div class="xc-slide-content">
+                                <p class="xc-title-1">Bachelor of Technology</p>
+                                <p class="xc-title-2">Electrical and Computer Engineering</p>
+                                <p class="xc-title-3">Under Graduate</p>
+                            </div>
+                            <div class="xc-slide-image">
+                                <img src="https://mdit.ac.in/xc-web-assets/images/departments/256-X-216-Electrical-and-Computer-Engineering.jpg" />
+                            </div>
+                        </div>
+                    </div> -->
+
+                </div>
+
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end of Academics section -->
+
+<!-- Events and Latest News -->
+<div class="xc-about-and-news xc-common">
+        <div class="row">
+        <div class="col-sm-12 xc-d-m">
+            <ul class="nav nav-tabs xc-tab-v1" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="Notifications" aria-selected="true">
+                        Events
+                        <hr>
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="Latest News" aria-selected="false">
+                        Latest News
+                        <hr>
+                    </button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="xc-content-common">
+
+                        <div>
+
+                            <ul class="xc-news-ul">
+
+                                <div class="row xc-events-cards">
+                                                                                <!-- card 1 -->
+                                            <div class=" col-sm-6 col-md-4 col-lg-4">
+                                                <div class="card">
+                                                    <a href="https://mdit.ac.in/events-and-calendar/fdp-on-personal-amp-professional-development-"><img src="https://mdit.ac.in/imgserver/uploads/attachments/pcm__2a1623f7-309f-4f82-aa56-f419694b9893_0.png" class="card-img-top" alt="..."></a>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title"><a href="https://mdit.ac.in/events-and-calendar/fdp-on-personal-amp-professional-development-" class="xc-card-link">FDP on Personal &amp; Professional Development  from 19/09/2025 to 21/09/2025</a></h5>
+                                                        <p class="card-text">
+</p>
+                                                    </div>
+
+                                                    <div class="card-body">
+                                                        <a href="https://mdit.ac.in/events-and-calendar/fdp-on-personal-amp-professional-development-" class="xc-view-more">View More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                    <!-- card 1 -->
+                                            <div class=" col-sm-6 col-md-4 col-lg-4">
+                                                <div class="card">
+                                                    <a href="https://mdit.ac.in/events-and-calendar/placed-students-qspiders"><img src="https://mdit.ac.in/imgserver/uploads/attachments/pcm__67ce664a-cac0-4389-aa2a-4033938697cd_0.png" class="card-img-top" alt="..."></a>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title"><a href="https://mdit.ac.in/events-and-calendar/placed-students-qspiders" class="xc-card-link">Placed Students-QSpiders</a></h5>
+                                                        <p class="card-text">
+</p>
+                                                    </div>
+
+                                                    <div class="card-body">
+                                                        <a href="https://mdit.ac.in/events-and-calendar/placed-students-qspiders" class="xc-view-more">View More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                    <!-- card 1 -->
+                                            <div class=" col-sm-6 col-md-4 col-lg-4">
+                                                <div class="card">
+                                                    <a href="https://mdit.ac.in/events-and-calendar/official-poster-release-thooval-2k25"><img src="https://mdit.ac.in/imgserver/uploads/attachments/pcm__d80afcf7-4935-4537-9e3d-732daf476a41_0.png" class="card-img-top" alt="..."></a>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title"><a href="https://mdit.ac.in/events-and-calendar/official-poster-release-thooval-2k25" class="xc-card-link">Official Poster Release-Thooval 2k25</a></h5>
+                                                        <p class="card-text">
+
+
+</p>
+                                                    </div>
+
+                                                    <div class="card-body">
+                                                        <a href="https://mdit.ac.in/events-and-calendar/official-poster-release-thooval-2k25" class="xc-view-more">View More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                    <!-- card 1 -->
+                                            <div class=" col-sm-6 col-md-4 col-lg-4">
+                                                <div class="card">
+                                                    <a href="https://mdit.ac.in/events-and-calendar/fresher039s-day-2024"><img src="https://mdit.ac.in/imgserver/uploads/attachments/pcm__80b2fed8-79e4-40f9-bd4f-e4ece9e7e25d_0.png" class="card-img-top" alt="..."></a>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title"><a href="https://mdit.ac.in/events-and-calendar/fresher039s-day-2024" class="xc-card-link">Fresher&#039;s Day 2024</a></h5>
+                                                        <p class="card-text">Fresher's Day 2k24
+
+       
+
+ 
+</p>
+                                                    </div>
+
+                                                    <div class="card-body">
+                                                        <a href="https://mdit.ac.in/events-and-calendar/fresher039s-day-2024" class="xc-view-more">View More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                                            </div>
+
+                            </ul>
+                        </div>
+                        <div>
+                            <a class="xc-readmore" href="https://mdit.ac.in/events-and-calendar">View All Events
+                                <img src="https://mdit.ac.in/xc-web-assets/images/others/readmore-arrow.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="xc-content-common">
+                        <div>
+                            <ul class="xc-news-ul">
+                                  <li>
+                                                    <a href="https://mdit.ac.in/latest-news/--------legal-awareness-class-in-association-with-taluk-legal-service-committee-koyilady-organized-with-internal-complaint-committee-on-25112025-at-230-pm">
+                                                        <p class="xc-title">        Legal awareness class in association with taluk legal service committee koyilady organized with internal complaint committee on 25/11/2025 at 2.30 pm</p>
+                                                        <p class="xc-date"> <img src="https://mdit.ac.in/xc-web-assets/images/others/Time.svg" alt="">Nov 25, 2025 </p>
+                                                    </a>
+                                                </li>  <li>
+                                                    <a href="https://mdit.ac.in/latest-news/won-2nd-place-in-national-level-hackathon">
+                                                        <p class="xc-title">Won 2nd place in National Level Hackathon</p>
+                                                        <p class="xc-date"> <img src="https://mdit.ac.in/xc-web-assets/images/others/Time.svg" alt="">Jul 25, 2025 </p>
+                                                    </a>
+                                                </li>  <li>
+                                                    <a href="https://mdit.ac.in/latest-news/admission">
+                                                        <p class="xc-title">Admission LET</p>
+                                                        <p class="xc-date"> <img src="https://mdit.ac.in/xc-web-assets/images/others/Time.svg" alt="">Jul 23, 2025 </p>
+                                                    </a>
+                                                </li>  <li>
+                                                    <a href="https://mdit.ac.in/latest-news/many-of-our-students-placed-on-qspiders">
+                                                        <p class="xc-title">Many of our students placed on QSpiders..!!!</p>
+                                                        <p class="xc-date"> <img src="https://mdit.ac.in/xc-web-assets/images/others/Time.svg" alt="">Jun 25, 2025 </p>
+                                                    </a>
+                                                </li>                            </ul>
+                        </div>
+                        <div>
+                            <a class="xc-readmore" href="https://mdit.ac.in/latest-news">View Full News Archive
+                                <img src="https://mdit.ac.in/xc-web-assets/images/others/readmore-arrow.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-8 xc-d-d">
+            <div class="xc-content-common">
+
+                <div>
+                    <h6>Latest Events</h6>
+                    <hr>
+                    <div class="xc-events-cards">
+                                                        <!-- card 1 -->
+                                <div class="card" style="width: 18rem;">
+                                    <a href="https://mdit.ac.in/events-and-calendar/fdp-on-personal-amp-professional-development-"><img src="https://mdit.ac.in/imgserver/uploads/attachments/pcm__2a1623f7-309f-4f82-aa56-f419694b9893_0.png" class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <h5 class="card-title"><a href="https://mdit.ac.in/events-and-calendar/fdp-on-personal-amp-professional-development-" class="xc-card-link">FDP on Personal &amp; Professional Development  from 19/09/2025 to 21/09/2025</a></h5>
+                                        <p class="card-text">
+</p>
+                                    </div>
+
+                                    <div class="card-body">
+                                        <a href="https://mdit.ac.in/events-and-calendar/fdp-on-personal-amp-professional-development-" class="xc-view-more">View More</a>
+                                    </div>
+                                </div>
+                                                            <!-- card 1 -->
+                                <div class="card" style="width: 18rem;">
+                                    <a href="https://mdit.ac.in/events-and-calendar/placed-students-qspiders"><img src="https://mdit.ac.in/imgserver/uploads/attachments/pcm__67ce664a-cac0-4389-aa2a-4033938697cd_0.png" class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <h5 class="card-title"><a href="https://mdit.ac.in/events-and-calendar/placed-students-qspiders" class="xc-card-link">Placed Students-QSpiders</a></h5>
+                                        <p class="card-text">
+</p>
+                                    </div>
+
+                                    <div class="card-body">
+                                        <a href="https://mdit.ac.in/events-and-calendar/placed-students-qspiders" class="xc-view-more">View More</a>
+                                    </div>
+                                </div>
+                                                            <!-- card 1 -->
+                                <div class="card" style="width: 18rem;">
+                                    <a href="https://mdit.ac.in/events-and-calendar/official-poster-release-thooval-2k25"><img src="https://mdit.ac.in/imgserver/uploads/attachments/pcm__d80afcf7-4935-4537-9e3d-732daf476a41_0.png" class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <h5 class="card-title"><a href="https://mdit.ac.in/events-and-calendar/official-poster-release-thooval-2k25" class="xc-card-link">Official Poster Release-Thooval 2k25</a></h5>
+                                        <p class="card-text">
+
+
+</p>
+                                    </div>
+
+                                    <div class="card-body">
+                                        <a href="https://mdit.ac.in/events-and-calendar/official-poster-release-thooval-2k25" class="xc-view-more">View More</a>
+                                    </div>
+                                </div>
+                                                            <!-- card 1 -->
+                                <div class="card" style="width: 18rem;">
+                                    <a href="https://mdit.ac.in/events-and-calendar/fresher039s-day-2024"><img src="https://mdit.ac.in/imgserver/uploads/attachments/pcm__80b2fed8-79e4-40f9-bd4f-e4ece9e7e25d_0.png" class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <h5 class="card-title"><a href="https://mdit.ac.in/events-and-calendar/fresher039s-day-2024" class="xc-card-link">Fresher&#039;s Day 2024</a></h5>
+                                        <p class="card-text">Fresher's Day 2k24
+
+       
+
+ 
+</p>
+                                    </div>
+
+                                    <div class="card-body">
+                                        <a href="https://mdit.ac.in/events-and-calendar/fresher039s-day-2024" class="xc-view-more">View More</a>
+                                    </div>
+                                </div>
+                                                                        </div>
+                    <!-- end of cards collection -->
+                    <div>
+
+                    </div>
+
+                    <a class="xc-readmore" href="https://mdit.ac.in/events-and-calendar">View All Events
+                        <img src="https://mdit.ac.in/xc-web-assets/images/others/readmore-arrow.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4 xc-d-d">
+            <div class="xc-content-common ms-5">
+                <div>
+                    <h6>Latest News</h6>
+                    <hr>
+                    <ul class="xc-news-ul">
+                          <li>
+                                            <a href="https://mdit.ac.in/latest-news/--------legal-awareness-class-in-association-with-taluk-legal-service-committee-koyilady-organized-with-internal-complaint-committee-on-25112025-at-230-pm">
+                                                <p class="xc-title">        Legal awareness class in association with taluk legal service committee koyilady organized with internal complaint committee on 25/11/2025 at 2.30 pm</p>
+                                                <p class="xc-date"> <img src="https://mdit.ac.in/xc-web-assets/images/others/Time.svg" alt="">Nov 25, 2025</p>
+                                            </a>
+                                        </li>  <li>
+                                            <a href="https://mdit.ac.in/latest-news/won-2nd-place-in-national-level-hackathon">
+                                                <p class="xc-title">Won 2nd place in National Level Hackathon</p>
+                                                <p class="xc-date"> <img src="https://mdit.ac.in/xc-web-assets/images/others/Time.svg" alt="">Jul 25, 2025</p>
+                                            </a>
+                                        </li>  <li>
+                                            <a href="https://mdit.ac.in/latest-news/admission">
+                                                <p class="xc-title">Admission LET</p>
+                                                <p class="xc-date"> <img src="https://mdit.ac.in/xc-web-assets/images/others/Time.svg" alt="">Jul 23, 2025</p>
+                                            </a>
+                                        </li>  <li>
+                                            <a href="https://mdit.ac.in/latest-news/many-of-our-students-placed-on-qspiders">
+                                                <p class="xc-title">Many of our students placed on QSpiders..!!!</p>
+                                                <p class="xc-date"> <img src="https://mdit.ac.in/xc-web-assets/images/others/Time.svg" alt="">Jun 25, 2025</p>
+                                            </a>
+                                        </li>                    </ul>
+                </div>
+                <div>
+                    <a class="xc-readmore" href="https://mdit.ac.in/latest-news">View Full News Archive
+                        <img src="https://mdit.ac.in/xc-web-assets/images/others/readmore-arrow.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- End of Events and Latest News -->
+
+<div class="xc-students-life">
+    <div class="row xc-sl-row">
+        <div class="col-sm-12 col-md-12 col-lg-5 xc-p-r">
+
+            <img class="xc-sl-content-bg" src="https://mdit.ac.in/xc-web-assets/images/others/students-life-bg.svg" alt="">
+
+            <div class="xc-sl-common">
+
+
+                <h6>Student Life</h6>
+                <hr>
+                <h4>Dive into Campus Life <br> @ M-DIT</h4>
+                <p class="xc-content">College life isn't just about academics – it's about exploring your passions, making lifelong friends, and building a future you'll love.
+                    <br> At M-DIT, we offer a vibrant campus community with something for everyone. Explore the endless possibilities at M-DIT!
+                </p>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="xc-sl-links">
+                            <h6>Related Links:</h6>
+                            <ul>
+                                <li>
+                                    <a href="https://mdit.ac.in/students-life/arts-club">Arts Club
+                                        <img src="https://mdit.ac.in/xc-web-assets/images/others/r-arrow.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://mdit.ac.in/students-life/sports-club">sports club
+                                        <img src="https://mdit.ac.in/xc-web-assets/images/others/r-arrow.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://mdit.ac.in/students-life/eco-club">eco club
+                                        <img src="https://mdit.ac.in/xc-web-assets/images/others/r-arrow.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://mdit.ac.in/students-life/nss">nss
+                                        <img src="https://mdit.ac.in/xc-web-assets/images/others/r-arrow.svg" alt="">
+                                    </a>
+                                </li>
+                                <!-- <li>
+                                    <a href="https://mdit.ac.in/under-constrcution">student chapters
+                                        <img src="https://mdit.ac.in/xc-web-assets/images/others/r-arrow.svg" alt="">
+                                    </a>
+                                </li> -->
+                                <li>
+                                    <a href="https://mdit.ac.in/students-life/ieee-sb-mdit">ieee sb MDIT
+                                        <img src="https://mdit.ac.in/xc-web-assets/images/others/r-arrow.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://mdit.ac.in/students-life/students-union">students union
+                                        <img src="https://mdit.ac.in/xc-web-assets/images/others/r-arrow.svg" alt="">
+                                    </a>
+                                </li>
+                                <!-- <li>
+                                    <a href="https://mdit.ac.in/under-constrcution">Technical fest
+                                        <img src="https://mdit.ac.in/xc-web-assets/images/others/r-arrow.svg" alt="">
+                                    </a>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <!--  <div class="col-sm-6">
+                        <div class="xc-sl-links">
+                            <h6>Association Links:</h6>
+                            <ul>
+
+                                 <li class="">
+                                                <a class="" href="https://mdit.ac.in/department/electronics-and-communication-engineering/association/e-zaic">E-ZAIC</a>
+                                            </li>
+                            </ul>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-7 xc-sl-bg"></div>
+    </div>
+</div>
+
+
+    <div class="xc-common xc-event-and-calender">
+        <div class="xc-content-common">
+            <div>
+                <h6>Events & Calendar</h6>
+                <hr>
+                <div class="row xc-row-event">
+                    
+                        <div class="col-sm-12 col-md-4 col-lg-4">
+                            <div class="xc-event-box">
+                                <div class="xc-event-date">
+                                    <p class="xc-day">12</p>
+                                    <p class="xc-month">Jul</p>
+                                    <p class="xc-year">2025</p>
+                                </div>
+                                <div class="xc-event-content">
+                                    <a href="https://mdit.ac.in/events-and-calendar/thooval-2k25">
+                                        <p class="xc-title">Thooval 2k25</p>
+                                        <p class="xc-date"> <img src="https://mdit.ac.in/xc-web-assets/images/others/Time.svg" alt="">5:19 PM - 8:19 PM</p>
+                                        <a class="xc-readmore" href="https://mdit.ac.in/events-and-calendar/thooval-2k25">Read More
+                                            <img src="https://mdit.ac.in/xc-web-assets/images/others/readmore-arrow.svg" alt="">
+                                        </a>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-lg-4">
+                            <div class="xc-event-box">
+                                <div class="xc-event-date">
+                                    <p class="xc-day">21</p>
+                                    <p class="xc-month">Oct</p>
+                                    <p class="xc-year">2024</p>
+                                </div>
+                                <div class="xc-event-content">
+                                    <a href="https://mdit.ac.in/events-and-calendar/magazine-release-2024">
+                                        <p class="xc-title">Magazine Release 2024</p>
+                                        <p class="xc-date"> <img src="https://mdit.ac.in/xc-web-assets/images/others/Time.svg" alt="">6:56 AM - 12:56 PM</p>
+                                        <a class="xc-readmore" href="https://mdit.ac.in/events-and-calendar/magazine-release-2024">Read More
+                                            <img src="https://mdit.ac.in/xc-web-assets/images/others/readmore-arrow.svg" alt="">
+                                        </a>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+            </div>
+            <div>
+                <a class="xc-readmore" href="https://mdit.ac.in/events-and-calendar">View Full Calendar
+                    <img src="https://mdit.ac.in/xc-web-assets/images/others/readmore-arrow.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+<style type="text/css">
+    .lightcase-contentInner{
+        height: auto !important;
+        width: 500px;
+    }
+    #lightcase-content{
+        box-shadow: unset !important;
+        background-color: unset !important;
+    }
+    .lightcase-contentInner img{
+        max-height: 598px !important;
+    }
+     
+</style>
+<input type="hidden" name="" id="popup_url" value="https://mdit.ac.in/imgserver/uploads/attachments/pcm__af972089-2806-4dce-b262-5800281fbbc8_0.png"><div class="xc-footer xc-common">
+    <div class="row">
+        <div class="col-sm-5 xc-d-d">
+            <div class="xc-link-wrap left">
+                <h6 class="xc-footer-title">Quick Links</h6>
+                <div class="row">
+                    <div class="col-sm-4 ">
+                        <ul class="xc-footer-ul">
+                            <li><a href="https://mdit.ac.in/about">About Us</a></li>
+                            <li><a href="https://mdit.ac.in/under-constrcution">Facilities</a></li>
+                            <li><a href="https://www.aicte-india.org/feedback/index.php" target="_blank">AICTE Feedback</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 ">
+                        <ul class="xc-footer-ul">
+                            <li><a href="https://mdit.ac.in/committee/students-grievance-and-redressal">Grievance Cell </a></li>
+                                  <li>
+        <a href="https://mdit.ac.in/career/professor-assistant-professor---mathematics-science-and-humanities-dept">Careers</a>
+    </li>
+                            <li><a href="https://mdit.ac.in/placement">Placement</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 ">
+                        <ul class="xc-footer-ul">
+                            <li><a href="https://mdit.ac.in/admission/btech/sanctioned-intake">Admission</a></li>
+                            <li><a href="https://mdit.ac.in/gallery-images">Gallery</a></li>
+                            <li><a href="https://mdit.ac.in/contact">Mandatory Disclosure</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2 col-4">
+            <div class="xc-footer-logo">
+                <img class="xc-clg-img" src="https://mdit.ac.in/xc-web-assets/logo/logo-2.svg" alt="">
+            </div>
+        </div>
+        <div class="col-sm-5 col-8">
+            <div class="xc-link-wrap right">
+
+                <div class="row">
+                    <div class="col-sm-6 col-6">
+                        <h6 class="xc-footer-title">Address:</h6>
+                        <ul class="xc-footer-ul">
+                            <li class="xc-text">M.Dasan Institute of Technology, <br> Ulliyeri P O, <br> Kozhikode, Kerala </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-6">
+                        <h6 class="xc-footer-title">Contact</h6>
+                        <ul class="xc-footer-ul">
+                            <li class="xc-text">Phone : <a href="tel:04962664700"><label> &nbsp;0496 2664 700 <br> +91 9188 042 610</label></a></li>
+                            <li class="xc-text"><a href="mailto:office@mdit.ac.in">Email : office@mdit.ac.in</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12  xc-d-m">
+            <div class="xc-link-wrap left">
+                <h6 class="xc-footer-title">Quick Links</h6>
+                <div class="row">
+
+                    <div class="col-sm-4 col-4">
+                        <ul class="xc-footer-ul">
+                            <li><a href="https://mdit.ac.in/about">About Us</a></li>
+                            <li><a href="https://mdit.ac.in/under-constrcution">Facilities</a></li>
+                            <li><a href="https://mdit.ac.in/under-constrcution">AICTE Feedback</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-4">
+                        <ul class="xc-footer-ul">
+                            <li><a href="https://mdit.ac.in/committee/students-grievance-and-redressal">Grievance Cell </a></li>
+                            <li><a href="https://mdit.ac.in/under-constrcution">Career</a></li>
+                            <li><a href="https://mdit.ac.in/placement">Placement</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-4">
+                        <ul class="xc-footer-ul">
+                            <li><a href="https://mdit.ac.in/admission/btech/sanctioned-intake">Admission</a></li>
+                            <li><a href="https://mdit.ac.in/gallery-images">Gallery</a></li>
+                            <li><a href="https://mdit.ac.in/contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<style>
+    .xc-footer-bottom .xc-cpy p a {
+        font-family: 'Source Sans Pro', sans-serif;
+        color: var(--xc12);
+        text-decoration: none;
+    }
+</style>
+<div class="xc-footer-bottom xc-common">
+    <div class="xc-social">
+        <ul class="xc-social-ul">
+            <li>
+                <p>follow M-DIT online:</p>
+            </li>
+            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a target="_blank" href="https://www.facebook.com/MDITKozhikod"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a target="_blank" href="https://www.instagram.com/mdit_kozhikode_official"><i class="fab fa-instagram"></i></a></li>
+            <li><a target="_blank" href="https://www.youtube.com/@mditkozhikode"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+
+
+        <a href="https://xctllp.com/" target="_blank"></a>
+    </div>
+    <div class="xc-cpy xc-align-center">
+        <p>© <script>document.write(new Date().getFullYear())</script> M. Dasan Institute of Technology. All rights reserved. </p>
+    </div>
+    <div class="xc-cpy xc-align-right">
+        <p>Designed and Developed by <a href="https://xctllp.com/" target="_blank">XpertConsortium Technologies LLP</a> </p>
+    </div>
+</div>
+</body>
+
+<script src="https://mdit.ac.in/xc-web-assets/js//notifications.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Gallery -->
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.21/js/lightgallery-all.min.js'></script>
+<script src='https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.min.js'></script>
+<script src='https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.js'></script>
+
+<!-- PDF -->
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+<script src="https://mdit.ac.in/lp/assetsl/js/core/jquery.form.min.js"></script>
+
+<script src="https://mdit.ac.in/lp/assetsl/js/core/serverclientlib.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.12/pdfobject.min.js" integrity="sha512-lDL6DD6x4foKuSTkRUKIMQJAoisDeojVPXknggl4fZWMr2/M/hMiKLs6sqUvxP/T2zXdrDMbLJ0/ru8QSZrnoQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src='https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js'></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/lightcase/2.5.0/js/lightcase.js'></script>
+
+<script>
+    PDFObject.embed("https://mdit.ac.in/documents/Organogram.pdf", "#pdf-viewer");
+</script>
+
+<script>
+    $('.xc-notification-content').on('click', '.xc-close-notifications', (e) => {
+        $('.xc-notification-banner').hide();
+    });
+
+    $('.xc-mobile-breadcrumb').on('click', '.xc-sidemenu-btn', (e) => {
+        $('.xc-icon-toggle').toggle();
+    });
+
+
+    function isSafari() {
+        var ua = navigator.userAgent.toLowerCase();
+        return ua.includes('safari') && !ua.includes('chrome');
+    }
+
+    if (isSafari()) {
+        $('.xc-left-menu').addClass('safari-browser');
+
+    } else {
+        $('.xc-left-menu').addClass('chrome-browser');
+    }
+
+
+
+    // Home slider
+    var swiper = new Swiper(".xc-home-swiper", {
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        loop: true,
+    });
+
+
+   // Placement slides
+    document.querySelectorAll('.xc-placement-swiper-wrap').forEach((wrap) => {
+
+    const swiperEl = wrap.querySelector('.xc-placement-swiper');
+    const nextBtn  = wrap.querySelector('.swiper-button-next');
+    const prevBtn  = wrap.querySelector('.swiper-button-prev');
+
+    new Swiper(swiperEl, {
+        slidesPerView: 1,
+        spaceBetween: 20,
+
+        loop: true,
+        loopAdditionalSlides: 4,
+        watchOverflow: false,
+
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+
+        navigation: {
+            nextEl: nextBtn,
+            prevEl: prevBtn,
+        },
+
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 4,
+                spaceBetween: 50,
+            },
+        },
+    });
+
+});
+
+
+    //department-slider
+    var swiper = new Swiper(".xc-department-swiper",{
+        loop:true,
+        autoplay:{
+            delay:3000,
+            disableOnInteraction: false,
+        },
+    });
+
+
+    // Form
+
+    function ajaxJsonTransferCustomMessage(message, info, ajaxurl, ajaxmethod = 'post', loader = '', callback = () => {}) {
+        var loaderselector = $(loader);
+        $.ajax({
+            url: ajaxurl,
+            method: ajaxmethod,
+            data: info,
+            beforeSend: () => {
+                loaderselector.fadeIn();
+            },
+            success: (output) => {
+                loaderselector.fadeOut();
+                let a = JSON.parse(output);
+
+                if (a[0] == "1") {
+                    swal(message, a[1], "success", {
+                        buttons: false,
+                        timer: 4000,
+                    }).then(() => {
+                        callback();
+                    });
+
+                } else if (a[0] == "0") {
+                    swal("Failed!", a[1], "error").then(() => {
+                        callback();
+                    });
+
+                } else {
+                    loaderselector.fadeOut();
+
+                }
+
+            },
+            error: (err) => {
+                swal("Failed!", "Something Went Wrong :", "error");
+                loaderselector.fadeOut();
+
+            }
+        });
+
+    }
+
+    $('#contact-us-button').on('click', function(e) {
+        e.preventDefault();
+
+        // alert("Clicked");
+
+        var contactForm = $('#contact-form');
+        var abc = contactForm.valid();
+        console.log(abc);
+
+        if (abc) {
+            // $('.xc-form-loader').addClass('xc-loader-opacity');
+            let info = contactForm.serialize();
+            ajaxJsonTransferCustomMessage('Submitted Successfully!', info, 'https://mdit.ac.in/contact-us-submit.php', 'POST', '#ajaxloader', () => {
+                contactForm[0].reset();
+                // $('.xc-form-loader').removeClass('xc-loader-opacity');
+            });
+        } else {
+            // swal("Oops!", " Please Fill All the Fields . ", "error");
+        }
+
+    });
+
+
+
+    // Side manu active
+
+    function sideMenuActive() {
+        const currentUrl = window.location.href; // Get the URL without the fragment
+        // alert(currentUrl);
+        $('.xc-menu-ul-1 .li-1 .a-1').removeClass('active');
+        $('.xc-menu-ul-1 .li-1 .a-1').each(function() {
+            const linkUrl = $(this).attr('href'); // Get the URL without the fragment
+            if (linkUrl === currentUrl) {
+                $(this).addClass('active');
+                // alert("helo");
+            }
+        });
+
+        // SUbmenu
+
+        $('.xc-menu-ul-1 .li-1 .xc-sub-menu li a').removeClass('active');
+        $('.xc-menu-ul-1 .li-1 .xc-sub-menu li a').each(function() {
+            const linkUrlSub = $(this).attr('href'); // Get the URL without the fragment
+            console.log(linkUrlSub);
+            if (linkUrlSub === currentUrl) {
+                console.log("Matchd");
+                $('.xc-menu-ul-1 .li-1 .xc-sub-menu li a[href="' + linkUrlSub + '"]').addClass('active');
+                $('.xc-menu-ul-1 .li-1 .xc-sub-menu li a[href="' + linkUrlSub + '"]').parent('li').parent('ul').siblings('a.a-1').addClass('active');
+
+            }
+        });
+
+    }
+
+    // Initial call to set the active class on page load
+    sideMenuActive();
+
+    // Attach click event to update the active class
+    $('.xc-menu-ul-1 .li-1 .a-1').on('click', function(e) {
+        $('.xc-menu-ul-1 .li-1 .a-1').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    // Submenu active
+
+    $('.xc-menu-ul-1 .li-1 .xc-sub-menu li a').on('click', function(e) {
+        $('.xc-menu-ul-1 .li-1 .a-1').removeClass('active');
+        $('.xc-menu-ul-1 .li-1 .xc-sub-menu li a').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    // Optionally, handle hash changes
+    $(window).on('hashchange', function() {
+        sideMenuActive();
+    });
+
+
+
+    // Gallery
+
+
+
+    // Gallery
+
+    var $gallery = $('#gallery');
+    var $boxes = $('.revGallery-anchor');
+    $boxes.hide();
+
+    $gallery.imagesLoaded({
+        background: true
+    }, function() {
+        $boxes.fadeIn();
+
+        $gallery.isotope({
+            // options
+            sortBy: 'original-order',
+            layoutMode: 'fitRows',
+            itemSelector: '.revGallery-anchor',
+            stagger: 30,
+        });
+    });
+
+
+
+    $("#gallery").lightGallery({
+
+    });
+
+
+
+    // Admission
+
+    $('#admission_for').change(function() {
+        // Get the selected option element
+        var selectedOption = $(this).find('option:selected');
+
+
+        // Retrieve the custom attribute value (e.g., 'data-custom-attr')
+        var customValue = selectedOption.data('custom-attr');
+        $('#prefered_branch').val("");
+        if (customValue == "B-Tech") {
+            $('select .btech-option').show();
+            $('select .mtech-option').hide();
+        } else {
+            $('select .mtech-option').show();
+            $('select .btech-option').hide();
+        }
+
+    });
+
+    $('#admission-button').on('click', function(e) {
+        e.preventDefault();
+        var admissionForm = $('#contact-us-form');
+        var abc = admissionForm.valid();
+        console.log(abc);
+
+        if (abc) {
+            let info = admissionForm.serialize();
+            ajaxJsonTransferCustomMessage('Submitted Successfully!', info, 'https://mdit.ac.in/admission-submit.php', 'POST', '#ajaxloader', () => {
+                admissionForm[0].reset();
+            });
+        } else {}
+
+    });
+
+    // Home Counter
+
+    var $target = $('.xc-statistics');
+
+    // Callback function to execute when target enters the viewport
+    var callback = function(entries, observer) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+
+                $('.counter').each(function() {
+                    $(this).prop('Counter', 0).animate({
+                        Counter: $(this).text()
+                    }, {
+                        duration: 4000,
+                        easing: 'swing',
+                        step: function(now) {
+                            $(this).text(Math.ceil(now));
+                        }
+                    });
+                });
+
+                // console.log('Target element is in the viewport!');
+                // You can trigger any function here
+                $target.addClass('in-viewport'); // Example action: adding a class
+                observer.unobserve(entry.target); // Stop observing if you only want to trigger once
+            }
+        });
+    };
+
+    // Create an Intersection Observer instance
+    var observer = new IntersectionObserver(callback, {
+        root: null, // Use the viewport as the root
+        rootMargin: '0px',
+        threshold: 0.1 // Trigger when 10% of the target is visible
+    });
+
+    // Start observing the target element
+    if($target && $target.length > 0){
+        observer.observe($target[0]);
+    }
+
+
+
+
+    // Academics
+
+    var swiper = new Swiper(".xc-academic-swiper", {
+        slidesPerView: 1,
+        centeredSlides: false,
+        slidesPerGroupSkip: 1,
+        grabCursor: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        keyboard: {
+            enabled: true,
+        },
+        breakpoints: {
+            769: {
+                slidesPerView: 2,
+                // slidesPerGroup: 2,
+            },
+            991: {
+                slidesPerView: 3,
+                // slidesPerGroup: 3,
+            },
+            1200: {
+                slidesPerView: 4,
+                // slidesPerGroup: 4,
+            },
+            1400: {
+                slidesPerView: 4,
+                // slidesPerGroup: 4,
+            },
+            1700: {
+                slidesPerView: 6,
+                // slidesPerGroup: 4,
+            },
+        },
+        loop: true,
+        scrollbar: {
+            el: ".swiper-scrollbar",
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+</script>
+
+
+<script type="text/javascript">
+
+    $(document).ready(function(){
+      var imgURLs = [$('#popup_url').val()];
+      var randomIndex = Math.floor(Math.random() * imgURLs.length);
+      var imgURL = imgURLs[randomIndex];
+
+      var url      = window.location.href;  
+
+      let pageurl=window.location.pathname.split("/").pop();
+
+      if ( pageurl =='' && $('#popup_url').val()!="" ) {
+
+          setTimeout(function(){
+              lightcase.start({
+                href: imgURL,
+                // more options like width, height, etc.
+              });
+           },1000); // 1000 to load it after 1 second from page load
+
+          // localStorage.setItem('popState','shown');
+       }
+     
+    });
+
+
+    var url = window.location.href;  
+    let pageurl=window.location.pathname.split("/").pop();
+
+    console.log(url);
+    console.log(pageurl);
+
+    if ( pageurl =='' ) {
+      console.log("In");
+      if(typeof(Storage) !=="undefined"){
+        if (!localStorage.getItem("banner")) {
+            localStorage.setItem("banner",1);
+            // $("#myModal").show();
+
+        }
+        else{
+            // $("#myModal").show();
+        }
+
+      } 
+      else{
+        // $("#myModal").show();
+      }
+    }
+
+     
+</script>
+<script type="text/javascript">
+         
+
+$('.read-more-content').addClass('hide')
+$(()=>{
+
+    const xc_site_url = window.location.href;
+
+        console.log(xc_site_url);
+
+
+    $('.c-menu__item').on('click','.xc-click-v1',  (e)=>{
+        // alert(e.target.getAttribute("href"));
+      $(''+e.target.getAttribute("href")+'').toggle();
+    });
+    
+
+    
+ 
+let activelink=window.location.pathname.split("/").pop();
+
+         // console.log(activelink);
+
+         $("ul.sidebar_link li").removeClass("liactive");
+
+         if ( xc_site_url.includes('/explore-fc') ){
+             page_activelink=window.location.href;
+            $('ul.xc-explore-fc-nav-ul li a[href="'+page_activelink+'"]').parent('li').addClass('liactive');
+         }
+
+
+
+
+         // NAAC
+         if ( xc_site_url.includes('/iqac') ){
+
+            
+
+
+            if (true) {}
+
+
+
+                if ($('.left-nav-ul a[href="https://mdit.ac.in/iqac/' + decodeURIComponent(activelink) + '"]').parent("li").addClass('liactive')) {
+                    console.log("ADDED");
+                }
+                else{
+                    
+                }
+
+                $('.left-nav-ul a[href="'+xc_site_url+'"]').parent("li").addClass('liactive');
+
+                 console.log("inside");
+
+
+                if ( !($('.left-nav-ul a').parent("li").hasClass('liactive')) ) {
+                    $('.left-nav-ul a[href="https://mdit.ac.in/iqac"]').parent("li").addClass('liactive');
+                }
+
+                // span:first-child
+
+        }
+        else{
+            $('.left-nav-ul a[href="'+xc_site_url+'"]').parent("li").addClass('liactive');
+        }
+
+        // NAAC End
+
+
+
+         
+         var link= ($(' a[href="https://mdit.ac.in/' + activelink + '"]').parent("li").closest("li"));
+         var ullink= ($(' a[href="https://mdit.ac.in/' + activelink + '"]').closest("ul"));
+
+
+         // console.log(ullink[0].id);
+         // console.log(link);
+         // console.log(activelink);
+        
+ 
+        if ( true ) {
+        $('.xc-sub-ul li.liactive').parent('ul.xc-sub-ul').parent('.card-body').parent('.collapse').parent('.card').children('.card-header').children('a').removeClass('collapsed');
+        $('.xc-sub-ul li.liactive').parent('ul.xc-sub-ul').parent('.card-body').parent('.collapse').addClass("show");
+    }
+
+
+        // console.log(decodeURIComponent(querystring));
+        
+        $('.left-nav-ul a[href="https://mdit.ac.in/faculty/' + decodeURIComponent(activelink) + '"]').parent("li").closest("li").addClass('liactive');
+
+        if(ullink[0].id==='firstLink')
+        {
+            ullink.addClass('show');
+        }
+
+
+
+             
+
+        $('.left-nav-ul a[href="https://mdit.ac.in/' + activelink + '"]').parent("li").closest("li").addClass('liactive');
+
+
+        if ($('ul.xc-nav-v1 li').hasClass('liactive')) {
+            $('ul.xc-nav-v1 li.liactive').parent("ul").addClass("show");
+        }
+
+        $('ul.xc-click-v1-1 li a[href="https://mdit.ac.in/' + activelink + '"]').addClass('active');
+          
+
+        $('ul.xc-click-v1-1 li a.active').parent('li').parent('ul').addClass("show");
+
+    // $('.xc-click-v1').on('click', function(e) {
+
+        
+
+    //   e.target.getAttribute("href");
+      
+       
+    // });
+
+
+
+        // $('.xc-sub-ul li a[href="' + xc_site_url + '"]').addClass('active');
+
+      
+    // if ( $('.xc-sub-ul li').hasClass('liactive') ) {
+
+
+   
+
+    // Explore fc
+
+
+    // Mobile Menu
+
+    $(".c-offcanvas__inner ul.c-menu li.c-menu__item a").removeClass("xc-m-menu-active");
+
+        $('.c-offcanvas__inner ul.c-menu li.c-menu__item a[href="'+xc_site_url+'"]').addClass('xc-m-menu-active');
+         
+
+    
+}); 
+
+
+
+<script src="script.js"></script>
+         
+</script>
+
+<script type="text/javascript">
+
+      ajaxFormSendSpl('#xc-application-form','click','#xc-application-form-submit','https://mdit.ac.in/afs','post','#ajaxloader',(res)=>{
+                            // console.log("submited");  
+               
+                });
+</script>
+
+
+</html>
